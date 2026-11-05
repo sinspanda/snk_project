@@ -48,7 +48,7 @@ If an application fails, roll back that request's product changes and leave Appl
 
 ## 3. Proposed models and UI
 
-Final model names: header `snk.grade.request`, line `snk.grade.request.line`. Field names below are proposed unless already present in the repository.
+Final model names: header `snk.grade.request`, line `snk.grade.request.line`. Field names below are proposed unless already present in the repository. Path: Inventory > Operations > Grade Change Request.
 
 | Model | Proposed field | Requirement |
 | --- | --- | --- |
