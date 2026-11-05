@@ -1,0 +1,35 @@
+*WEEKLY MANAGER UPDATE - 24 JULI 2026*
+
+*PATRA ASSET*
+- Pemetaan aset masuk tahap testing.
+- Error seluruh tipe transaksi aset sedang dicek tim mobile.
+- Mobile Flow approval dan action transaksi/opname dari detail aset ditargetkan selesai 26 Juli.
+
+*MITO*
+- Unrealized Gain/Loss serta Reward, Free Product & AP Form Lintas OU sudah naik production, menunggu konfirmasi user.
+- Testing adjustment stock/cost minus selesai; proses adjustment dilanjutkan.
+- Advance Budget sudah selesai development dan masuk testing.
+- Budget Jobsheet tersedia di development; skema Budget Project masih perlu dikonfirmasi.
+- Rekonsiliasi dan adjustment akun Barang Dalam Transit serta Barang Dalam Proses masih berjalan.
+- Rekonsiliasi Ayat Silang Pembelian selesai. Masih menunggu konfirmasi adjustment Maret-April serta penyelesaian 19 PO yang belum di-landed.
+- Bug duplicate GR PO SKD sudah naik dev dan lagi testing.
+- Issue IMEI duplikat sudah minim dan dilanjutkan monitoring secara case-by-case.
+- SFA user requirement onsite pada 4 Agustus 2026, jam 10:00.
+
+*FC PORT*
+- Development key feature core sudah dimulai.
+- Blueprint masih memerlukan penyelesaian adendum, CR, additional notes mobile, revisi scope, dan update timeline.
+- Perlu meeting dengan Forecastle untuk finalisasi dan approval Blueprint oleh PM baru.
+- Karena Blueprint belum signed, target Go Live awal 1 Oktober seharusnya mundur.
+
+*MESA*
+Target penyelesaian 26 Juli:
+- Perbaikan concurrency picking/transfer dan duplicate sequence.
+- Perbaikan status serta tanggal inbound dari POS.
+- Otomatisasi Shipping Cost sebelum validasi DO.
+- Perbaikan generate Purchase Request sesuai jadwal site.
+- Penambahan transit location dan bulk validation Scrap.
+
+*SMU*
+- UAT list kedua berdasarkan priority level ditargetkan 27 Juli signed.
+- FDD Report Stock Movement/Stock Card estimasi ready 26 Juli.

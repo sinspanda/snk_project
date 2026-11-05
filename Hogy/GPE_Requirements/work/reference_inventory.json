@@ -1,0 +1,186 @@
+{
+  "reference": "E:\\Panda\\Hogy\\Blueprint_NSI HOGY_Payroll System V1.0.docx",
+  "sha256": "23f9245e6620f7b8f75cb4866d93bfb9ecb3f19c4c89715cb73c1ac1c2f8eb4d",
+  "parts": [
+    {
+      "path": "[Content_Types].xml",
+      "size": 2731,
+      "sha256": "3a8848fb723ac9280877c9990297ae53c8576430a56e97b5573a394e3a3429a0",
+      "action": "editable"
+    },
+    {
+      "path": "_rels/.rels",
+      "size": 590,
+      "sha256": "e19238d7a71fa7a2490776252686f70e2de6238c87cd509b5e3a3cc07c2ea4df",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/document.xml",
+      "size": 417258,
+      "sha256": "59e5e5216941899988351138708ef638cdcc456da47af47c179613801f21ef00",
+      "action": "editable"
+    },
+    {
+      "path": "word/_rels/document.xml.rels",
+      "size": 2826,
+      "sha256": "6fcc2c4eeff1dc16fff3eda11448f2273c8e1b32e46406d8495e0b50c83c6b9b",
+      "action": "editable"
+    },
+    {
+      "path": "word/footnotes.xml",
+      "size": 3056,
+      "sha256": "68ea667f3651725bf1adfc2e15759ded3d41d409f8bedb209ff95001ba2510a8",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/endnotes.xml",
+      "size": 3050,
+      "sha256": "d86e34fdfe96d87fe963bd68226cb4ca2fd9c79fc21d2e1adcb3c9f461317991",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/header1.xml",
+      "size": 2900,
+      "sha256": "5215a73d67b0f1eb975e40c161eb412e9bdeed6a4307aa9a4891f46f3a207516",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/footer1.xml",
+      "size": 3504,
+      "sha256": "5fef46b58f108f7ac4619bdaf658d70f3f16a0006169920085cc84b2f8dec483",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/footer2.xml",
+      "size": 2903,
+      "sha256": "7d601fcc534d317313303e6bd21ad7a158d6dc5104ea1b411740044701ccee74",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/header2.xml",
+      "size": 10203,
+      "sha256": "f8d99dbf3304d90a2ca79d098ec7956e0580d60369f967aaf9f272006ec3074a",
+      "action": "editable"
+    },
+    {
+      "path": "word/footer3.xml",
+      "size": 8048,
+      "sha256": "10c8d7b5d706ddecd7414f60948985e30174b1dad5498e0bbd0e60c5f8d9cc81",
+      "action": "editable"
+    },
+    {
+      "path": "word/_rels/header2.xml.rels",
+      "size": 554,
+      "sha256": "32641b9b05d8f5377deadc4afdf2032820fbfc0b799fbf73becb2f29521b10df",
+      "action": "editable"
+    },
+    {
+      "path": "word/media/image1.png",
+      "size": 181575,
+      "sha256": "169982369ffad3b698e89cc9dfddd1e37cc97d2952f5d3907ad3cdd87b3ce4a2",
+      "action": "remove obsolete HOGY/QC assets"
+    },
+    {
+      "path": "word/media/image2.jpeg",
+      "size": 124298,
+      "sha256": "a1bfabdd73effdf463f036184f916e79e02700b04eac9d1fdd2bf7ff069edc9b",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/media/image3.emf",
+      "size": 48972,
+      "sha256": "541b6e5edd0372ecbc7dd477919b3299ec0974b0ce06c3978b85309a08b4686a",
+      "action": "remove obsolete HOGY/QC assets"
+    },
+    {
+      "path": "word/embeddings/oleObject1.bin",
+      "size": 71168,
+      "sha256": "85dd3ab687a908f9a711c4d47327c78da28a9fe42930c990054caf590f0f442d",
+      "action": "remove obsolete HOGY/QC assets"
+    },
+    {
+      "path": "word/media/image4.emf",
+      "size": 109328,
+      "sha256": "d3e8e5d1e8ebe569c90e913bdf49c3990f2aaf9b0226b8325f33a9416c52307b",
+      "action": "remove obsolete HOGY/QC assets"
+    },
+    {
+      "path": "word/embeddings/oleObject2.bin",
+      "size": 212992,
+      "sha256": "2e5e920ce6e368e6b7dcfc04885ec0b49bcba6f0300bd790b5a5cd41949fe1d3",
+      "action": "remove obsolete HOGY/QC assets"
+    },
+    {
+      "path": "word/media/image5.png",
+      "size": 24832,
+      "sha256": "1db9b675eac684774ccd00d4a63dc9610f3a9f8a2ca0bb044cc03f8d4d44c6d5",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/theme/theme1.xml",
+      "size": 6992,
+      "sha256": "bf4992e3fa7832e5c68fdbc4ec5189c8e5d347fef03c5ba2522ad704bde5078f",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/settings.xml",
+      "size": 81021,
+      "sha256": "e5ec9050f63ae5cd623362c73542a50be825d4cacf3f4236d4c53fe05b3cb175",
+      "action": "editable"
+    },
+    {
+      "path": "customXml/item1.xml",
+      "size": 270,
+      "sha256": "c8092edbb672f8c93f1d5ef66539a6f169462ba8738b785b59cc5d96f4aca59a",
+      "action": "preserve-only"
+    },
+    {
+      "path": "customXml/itemProps1.xml",
+      "size": 341,
+      "sha256": "df212bb12ee56a6e9ffeeeed1cc469628417405ef9015c8d3257f93570b1b590",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/numbering.xml",
+      "size": 140719,
+      "sha256": "d021508ae9c52527e4d1cf3d274a0ce3b8b8c0e365bd4311ace2ba3f748edac6",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/styles.xml",
+      "size": 165790,
+      "sha256": "5efa0159159913e0821fc4348f49daf12552992b2a061cfc76c11ce49c0c2986",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/webSettings.xml",
+      "size": 51719,
+      "sha256": "342d33451864cd4d17c522797bedf28ff57dde5f798e8d2a8c3bfa5b4e9b9ddb",
+      "action": "preserve-only"
+    },
+    {
+      "path": "word/fontTable.xml",
+      "size": 5315,
+      "sha256": "5e891088559de23cb28bf5fd1449da759a6db2f357908ff7e30bd6ac38f8b9a7",
+      "action": "preserve-only"
+    },
+    {
+      "path": "docProps/core.xml",
+      "size": 1065,
+      "sha256": "70af89f9d2dcc782129ea4f74aea31ad9cd31231d12f7111c656a1a9738522f9",
+      "action": "editable"
+    },
+    {
+      "path": "docProps/app.xml",
+      "size": 1083,
+      "sha256": "31f5ae16a592fe967c18eecbf41b3972ef64e1f1b2de1c68ed8ca20f074068dc",
+      "action": "editable"
+    },
+    {
+      "path": "customXml/_rels/item1.xml.rels",
+      "size": 296,
+      "sha256": "80482f86e196171d66001e0e74d1900408a3aaf2463e54005d251b5f2db9a0b0",
+      "action": "preserve-only"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+FC PORT
+*24 Juli 2026*
+
+1. Blueprint ada adendum dan CR.
+2. Develop sudah mulai pada key feature core, https://1drv.ms/x/c/8d679a20af4577ad/IQBCcEcWSIdQQ58LQ8-40MskAbMmlU_riEwvWVBDlA1eG10?e=miMD9l
+3. Ada Info dari Rinaldi (proj koor) kalo note feedback kurang lengkap setelah dikonfim ok oleh Pak Dayat dan kita kirim BP signed.
+4. Dari sisi Forecastle ada pergantian PM. Apakah akan ada perubahan flow atau proses dari BP terakhir? BP signed butuh acc PM FC.
+5. Biar BP signed, perlu agendakan meeting dengan Forecastle:
+- Kirim dengan Proposal CR Mobile dan BP additional notes for mobile, tunggu update Pak Andri.
+- Update Scope.
+- Poin revisi Blueprint.
+- Update timeline.
+6. Go Live milestone awal 1 Oktober, BP belum sign. Timeline seharusnya mundur.

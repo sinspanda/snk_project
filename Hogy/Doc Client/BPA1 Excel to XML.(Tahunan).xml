@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<A1Bulk xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TIN>0010847341057000</TIN>
+	<ListOfA1>
+		<A1>
+			<WorkForSecondEmployer>No</WorkForSecondEmployer>
+			<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+			<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+			<TaxPeriodYear>2026</TaxPeriodYear>
+			<CounterpartOpt>Resident</CounterpartOpt>
+			<CounterpartPassport xsi:nil="true"/>
+			<CounterpartTin>3216083007710002</CounterpartTin>
+			<TaxExemptOpt>K/3</TaxExemptOpt>
+			<StatusOfWithholding>PartialYear</StatusOfWithholding>
+			<CounterpartPosition>Koordinator Part / Drape Group</CounterpartPosition>
+			<TaxObjectCode>21-100-01</TaxObjectCode>
+			<NumberOfMonths>0</NumberOfMonths>
+			<SalaryPensionJhtTht>49732396</SalaryPensionJhtTht>
+			<GrossUpOpt>Yes</GrossUpOpt>
+			<IncomeTaxBenefit>0</IncomeTaxBenefit>
+			<OtherBenefit>8447309</OtherBenefit>
+			<Honorarium>0</Honorarium>
+			<InsurancePaidByEmployer>4989223</InsurancePaidByEmployer>
+			<Natura>0</Natura>
+			<TantiemBonusThr>8005217</TantiemBonusThr>
+			<PensionContributionJhtThtFee>1681092</PensionContributionJhtThtFee>
+			<Zakat>0</Zakat>
+			<PrevWhTaxSlip xsi:nil="true"/>
+			<TaxCertificate>N/A</TaxCertificate>
+			<Article21IncomeTax>1829413</Article21IncomeTax>
+			<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+			<WithholdingDate>2026-07-31</WithholdingDate>
+		</A1>
+		<A1>
+			<WorkForSecondEmployer>No</WorkForSecondEmployer>
+			<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+			<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+			<TaxPeriodYear>2026</TaxPeriodYear>
+			<CounterpartOpt>Resident</CounterpartOpt>
+			<CounterpartPassport xsi:nil="true"/>
+			<CounterpartTin>3275025405030010</CounterpartTin>
+			<TaxExemptOpt>TK/0</TaxExemptOpt>
+			<StatusOfWithholding>PartialYear</StatusOfWithholding>
+			<CounterpartPosition>Operator Plastic Molding</CounterpartPosition>
+			<TaxObjectCode>21-100-01</TaxObjectCode>
+			<NumberOfMonths>0</NumberOfMonths>
+			<SalaryPensionJhtTht>37382102</SalaryPensionJhtTht>
+			<GrossUpOpt>Yes</GrossUpOpt>
+			<IncomeTaxBenefit>0</IncomeTaxBenefit>
+			<OtherBenefit>1973746</OtherBenefit>
+			<Honorarium>0</Honorarium>
+			<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+			<Natura>0</Natura>
+			<TantiemBonusThr>6161885</TantiemBonusThr>
+			<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+			<Zakat>0</Zakat>
+			<PrevWhTaxSlip xsi:nil="true"/>
+			<TaxCertificate>N/A</TaxCertificate>
+			<Article21IncomeTax>1110819</Article21IncomeTax>
+			<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+			<WithholdingDate>2026-07-31</WithholdingDate>
+		</A1>
+		<A1>
+			<WorkForSecondEmployer>No</WorkForSecondEmployer>
+			<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+			<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+			<TaxPeriodYear>2026</TaxPeriodYear>
+			<CounterpartOpt>Resident</CounterpartOpt>
+			<CounterpartPassport xsi:nil="true"/>
+			<CounterpartTin>3216226807980003</CounterpartTin>
+			<TaxExemptOpt>TK/0</TaxExemptOpt>
+			<StatusOfWithholding>PartialYear</StatusOfWithholding>
+			<CounterpartPosition>Operator Seftal Group</CounterpartPosition>
+			<TaxObjectCode>21-100-01</TaxObjectCode>
+			<NumberOfMonths>0</NumberOfMonths>
+			<SalaryPensionJhtTht>37587498</SalaryPensionJhtTht>
+			<GrossUpOpt>Yes</GrossUpOpt>
+			<IncomeTaxBenefit>0</IncomeTaxBenefit>
+			<OtherBenefit>4419991</OtherBenefit>
+			<Honorarium>0</Honorarium>
+			<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+			<Natura>0</Natura>
+			<TantiemBonusThr>6161885</TantiemBonusThr>
+			<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+			<Zakat>0</Zakat>
+			<PrevWhTaxSlip xsi:nil="true"/>
+			<TaxCertificate>N/A</TaxCertificate>
+			<Article21IncomeTax>1349793</Article21IncomeTax>
+			<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+			<WithholdingDate>2026-07-31</WithholdingDate>
+		</A1>
+		<A1>
+			<WorkForSecondEmployer>No</WorkForSecondEmployer>
+			<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+			<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+			<TaxPeriodYear>2026</TaxPeriodYear>
+			<CounterpartOpt>Resident</CounterpartOpt>
+			<CounterpartPassport xsi:nil="true"/>
+			<CounterpartTin>3216056201010001</CounterpartTin>
+			<TaxExemptOpt>TK/0</TaxExemptOpt>
+			<StatusOfWithholding>PartialYear</StatusOfWithholding>
+			<CounterpartPosition>Operator Nyucardio Group</CounterpartPosition>
+			<TaxObjectCode>21-100-01</TaxObjectCode>
+			<NumberOfMonths>0</NumberOfMonths>
+			<SalaryPensionJhtTht>37587498</SalaryPensionJhtTht>
+			<GrossUpOpt>Yes</GrossUpOpt>
+			<IncomeTaxBenefit>0</IncomeTaxBenefit>
+			<OtherBenefit>2358107</OtherBenefit>
+			<Honorarium>0</Honorarium>
+			<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+			<Natura>0</Natura>
+			<TantiemBonusThr>6161885</TantiemBonusThr>
+			<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+			<Zakat>0</Zakat>
+			<PrevWhTaxSlip xsi:nil="true"/>
+			<TaxCertificate>N/A</TaxCertificate>
+			<Article21IncomeTax>1230568</Article21IncomeTax>
+			<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+			<WithholdingDate>2026-07-31</WithholdingDate>
+		</A1>
+		<A1>
+			<WorkForSecondEmployer>No</WorkForSecondEmployer>
+			<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+			<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+			<TaxPeriodYear>2026</TaxPeriodYear>
+			<CounterpartOpt>Resident</CounterpartOpt>
+			<CounterpartPassport xsi:nil="true"/>
+			<CounterpartTin>3207016709970003</CounterpartTin>
+			<TaxExemptOpt>TK/0</TaxExemptOpt>
+			<StatusOfWithholding>PartialYear</StatusOfWithholding>
+			<CounterpartPosition>Operator Gown Sewing 3 Group</CounterpartPosition>
+			<TaxObjectCode>21-100-01</TaxObjectCode>
+			<NumberOfMonths>0</NumberOfMonths>
+			<SalaryPensionJhtTht>39025271</SalaryPensionJhtTht>
+			<GrossUpOpt>Yes</GrossUpOpt>
+			<IncomeTaxBenefit>0</IncomeTaxBenefit>
+			<OtherBenefit>1882076</OtherBenefit>
+			<Honorarium>0</Honorarium>
+			<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+			<Natura>0</Natura>
+			<TantiemBonusThr>6161885</TantiemBonusThr>
+			<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+			<Zakat>0</Zakat>
+			<PrevWhTaxSlip xsi:nil="true"/>
+			<TaxCertificate>N/A</TaxCertificate>
+			<Article21IncomeTax>1076085</Article21IncomeTax>
+			<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+			<WithholdingDate>2026-07-31</WithholdingDate>
+		</A1>
+		<A1>
+			<WorkForSecondEmployer>No</WorkForSecondEmployer>
+			<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+			<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+			<TaxPeriodYear>2026</TaxPeriodYear>
+			<CounterpartOpt>Resident</CounterpartOpt>
+			<CounterpartPassport xsi:nil="true"/>
+			<CounterpartTin>3328124203010003</CounterpartTin>
+			<TaxExemptOpt>TK/0</TaxExemptOpt>
+			<StatusOfWithholding>PartialYear</StatusOfWithholding>
+			<CounterpartPosition>Operator Drape Group</CounterpartPosition>
+			<TaxObjectCode>21-100-01</TaxObjectCode>
+			<NumberOfMonths>0</NumberOfMonths>
+			<SalaryPensionJhtTht>40257648</SalaryPensionJhtTht>
+			<GrossUpOpt>Yes</GrossUpOpt>
+			<IncomeTaxBenefit>0</IncomeTaxBenefit>
+			<OtherBenefit>2857471</OtherBenefit>
+			<Honorarium>0</Honorarium>
+			<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+			<Natura>0</Natura>
+			<TantiemBonusThr>6211885</TantiemBonusThr>
+			<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+			<Zakat>0</Zakat>
+			<PrevWhTaxSlip xsi:nil="true"/>
+			<TaxCertificate>N/A</TaxCertificate>
+			<Article21IncomeTax>1089468</Article21IncomeTax>
+			<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+			<WithholdingDate>2026-07-31</WithholdingDate>
+		</A1>
+		<A1>
+			<WorkForSecondEmployer>No</WorkForSecondEmployer>
+			<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+			<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+			<TaxPeriodYear>2026</TaxPeriodYear>
+			<CounterpartOpt>Resident</CounterpartOpt>
+			<CounterpartPassport xsi:nil="true"/>
+			<CounterpartTin>3275025012010018</CounterpartTin>
+			<TaxExemptOpt>TK/0</TaxExemptOpt>
+			<StatusOfWithholding>PartialYear</StatusOfWithholding>
+			<CounterpartPosition>Operator Non Std Drape Group</CounterpartPosition>
+			<TaxObjectCode>21-100-01</TaxObjectCode>
+			<NumberOfMonths>0</NumberOfMonths>
+			<SalaryPensionJhtTht>41695422</SalaryPensionJhtTht>
+			<GrossUpOpt>Yes</GrossUpOpt>
+			<IncomeTaxBenefit>0</IncomeTaxBenefit>
+			<OtherBenefit>4929306</OtherBenefit>
+			<Honorarium>0</Honorarium>
+			<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+			<Natura>0</Natura>
+			<TantiemBonusThr>6161885</TantiemBonusThr>
+			<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+			<Zakat>0</Zakat>
+			<PrevWhTaxSlip xsi:nil="true"/>
+			<TaxCertificate>N/A</TaxCertificate>
+			<Article21IncomeTax>1319574</Article21IncomeTax>
+			<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+			<WithholdingDate>2026-07-31</WithholdingDate>
+		</A1>
+		<A1>
+			<WorkForSecondEmployer>No</WorkForSecondEmployer>
+			<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+			<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+			<TaxPeriodYear>2026</TaxPeriodYear>
+			<CounterpartOpt>Resident</CounterpartOpt>
+			<CounterpartPassport xsi:nil="true"/>
+			<CounterpartTin>3215252405030002</CounterpartTin>
+			<TaxExemptOpt>TK/0</TaxExemptOpt>
+			<StatusOfWithholding>PartialYear</StatusOfWithholding>
+			<CounterpartPosition>Operator QC Group</CounterpartPosition>
+			<TaxObjectCode>21-100-01</TaxObjectCode>
+			<NumberOfMonths>0</NumberOfMonths>
+			<SalaryPensionJhtTht>38137031</SalaryPensionJhtTht>
+			<GrossUpOpt>Yes</GrossUpOpt>
+			<IncomeTaxBenefit>0</IncomeTaxBenefit>
+			<OtherBenefit>2875924</OtherBenefit>
+			<Honorarium>0</Honorarium>
+			<InsurancePaidByEmployer>1896079</InsurancePaidByEmployer>
+			<Natura>0</Natura>
+			<TantiemBonusThr>5988885</TantiemBonusThr>
+			<PensionContributionJhtThtFee>1257669</PensionContributionJhtThtFee>
+			<Zakat>0</Zakat>
+			<PrevWhTaxSlip xsi:nil="true"/>
+			<TaxCertificate>N/A</TaxCertificate>
+			<Article21IncomeTax>1016920</Article21IncomeTax>
+			<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+			<WithholdingDate>2026-07-31</WithholdingDate>
+		</A1>
+		<A1>
+			<WorkForSecondEmployer>No</WorkForSecondEmployer>
+			<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+			<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+			<TaxPeriodYear>2026</TaxPeriodYear>
+			<CounterpartOpt>Resident</CounterpartOpt>
+			<CounterpartPassport xsi:nil="true"/>
+			<CounterpartTin>3376046203030001</CounterpartTin>
+			<TaxExemptOpt>TK/0</TaxExemptOpt>
+			<StatusOfWithholding>PartialYear</StatusOfWithholding>
+			<CounterpartPosition>Operator Accessory Group</CounterpartPosition>
+			<TaxObjectCode>21-100-01</TaxObjectCode>
+			<NumberOfMonths>0</NumberOfMonths>
+			<SalaryPensionJhtTht>40953307</SalaryPensionJhtTht>
+			<GrossUpOpt>Yes</GrossUpOpt>
+			<IncomeTaxBenefit>0</IncomeTaxBenefit>
+			<OtherBenefit>4289369</OtherBenefit>
+			<Honorarium>0</Honorarium>
+			<InsurancePaidByEmployer>1888164</InsurancePaidByEmployer>
+			<Natura>0</Natura>
+			<TantiemBonusThr>5686115</TantiemBonusThr>
+			<PensionContributionJhtThtFee>1252419</PensionContributionJhtThtFee>
+			<Zakat>0</Zakat>
+			<PrevWhTaxSlip xsi:nil="true"/>
+			<TaxCertificate>N/A</TaxCertificate>
+			<Article21IncomeTax>1056395</Article21IncomeTax>
+			<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+			<WithholdingDate>2026-07-31</WithholdingDate>
+		</A1>
+		<A1>
+			<WorkForSecondEmployer>No</WorkForSecondEmployer>
+			<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+			<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+			<TaxPeriodYear>2026</TaxPeriodYear>
+			<CounterpartOpt>Resident</CounterpartOpt>
+			<CounterpartPassport xsi:nil="true"/>
+			<CounterpartTin>3216086807050001</CounterpartTin>
+			<TaxExemptOpt>TK/0</TaxExemptOpt>
+			<StatusOfWithholding>PartialYear</StatusOfWithholding>
+			<CounterpartPosition>Operator Non Std Over All Drape Group</CounterpartPosition>
+			<TaxObjectCode>21-100-01</TaxObjectCode>
+			<NumberOfMonths>0</NumberOfMonths>
+			<SalaryPensionJhtTht>35410347</SalaryPensionJhtTht>
+			<GrossUpOpt>Yes</GrossUpOpt>
+			<IncomeTaxBenefit>0</IncomeTaxBenefit>
+			<OtherBenefit>5114272</OtherBenefit>
+			<Honorarium>0</Honorarium>
+			<InsurancePaidByEmployer>1888164</InsurancePaidByEmployer>
+			<Natura>0</Natura>
+			<TantiemBonusThr>1013043</TantiemBonusThr>
+			<PensionContributionJhtThtFee>1252419</PensionContributionJhtThtFee>
+			<Zakat>0</Zakat>
+			<PrevWhTaxSlip xsi:nil="true"/>
+			<TaxCertificate>N/A</TaxCertificate>
+			<Article21IncomeTax>456520</Article21IncomeTax>
+			<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+			<WithholdingDate>2026-07-31</WithholdingDate>
+		</A1>
+	</ListOfA1>
+</A1Bulk>

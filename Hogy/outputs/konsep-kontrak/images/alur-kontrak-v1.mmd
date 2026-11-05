@@ -1,0 +1,22 @@
+flowchart TD
+    A[HR Manager membuka Employment history] --> B{Jenis kebutuhan?}
+
+    B -->|Kontrak awal| C[Buat kontrak baru]
+    B -->|Adjustment nominal| D[Pilih kontrak berjalan]
+    B -->|Mutasi / Promosi / Demosi| C
+
+    C --> E[Isi periode kontrak]
+    E --> F[Isi nominal pada section Payroll]
+    D --> G[Ubah nominal pada section Payroll]
+
+    F --> H[Validasi data]
+    G --> H
+
+    H --> I{Data valid?}
+    I -->|Tidak| J[Tampilkan pesan validasi]
+    J --> K[HR Manager memperbaiki data]
+    K --> H
+
+    I -->|Ya| L[Simpan kontrak]
+    L --> M[Tampilkan nominal secara read-only pada Employees]
+    M --> N[Employee melihat kontrak miliknya sendiri]

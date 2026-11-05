@@ -1,0 +1,170 @@
+{
+  "input": "E:\\Panda\\MITO\\MITO SFA Mobile - Blueprint Draft V0.1.docx",
+  "fonts_by_char_count": {
+    "Arial": 30391
+  },
+  "direct_run_formatting_runs": 1023,
+  "direct_paragraph_formatting_paragraphs": 1062,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 2,
+      "text": "Document Control",
+      "style": "BP Head 1"
+    },
+    {
+      "para_index": 3,
+      "text": "Document History",
+      "style": "BP Head 2"
+    },
+    {
+      "para_index": 5,
+      "text": "Document Distribution",
+      "style": "BP Head 2"
+    },
+    {
+      "para_index": 7,
+      "text": "Approval",
+      "style": "BP Head 1"
+    },
+    {
+      "para_index": 9,
+      "text": "MITO Electronics",
+      "style": "BP Head 2"
+    },
+    {
+      "para_index": 11,
+      "text": "PT. Sinergi Karya Solusindo",
+      "style": "BP Head 2"
+    },
+    {
+      "para_index": 13,
+      "text": "Legend",
+      "style": "BP Head 1"
+    },
+    {
+      "para_index": 17,
+      "text": "Table of Contents",
+      "style": "BP Head 1"
+    },
+    {
+      "para_index": 18,
+      "text": "1 Project Overview",
+      "style": "Normal"
+    },
+    {
+      "para_index": 19,
+      "text": "2 Solution Overview",
+      "style": "Normal"
+    },
+    {
+      "para_index": 20,
+      "text": "3 Feature Overview",
+      "style": "Normal"
+    },
+    {
+      "para_index": 21,
+      "text": "4 Business Process Flow",
+      "style": "Normal"
+    },
+    {
+      "para_index": 40,
+      "text": "5 Decisions & Open Items",
+      "style": "Normal"
+    },
+    {
+      "para_index": 41,
+      "text": "1 Project Overview",
+      "style": "BP Head 1"
+    },
+    {
+      "para_index": 42,
+      "text": "1.1 Overview",
+      "style": "BP Head 2"
+    },
+    {
+      "para_index": 44,
+      "text": "1.2 Tujuan",
+      "style": "BP Head 2"
+    },
+    {
+      "para_index": 50,
+      "text": "1.3 Ruang Lingkup",
+      "style": "BP Head 2"
+    },
+    {
+      "para_index": 52,
+      "text": "2 Solution Overview",
+      "style": "BP Head 1"
+    },
+    {
+      "para_index": 53,
+      "text": "2.1 Arsitektur Solusi",
+      "style": "BP Head 2"
+    },
+    {
+      "para_index": 55,
+      "text": "2.2 Peran Pengguna",
+      "style": "BP Head 2"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 2,
+        "text": "Document Control",
+        "style": "BP Head 1"
+      },
+      {
+        "para_index": 3,
+        "text": "Document History",
+        "style": "BP Head 2"
+      },
+      {
+        "para_index": 4,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "text": "Document Distribution",
+        "style": "BP Head 2"
+      },
+      {
+        "para_index": 6,
+        "text": "",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 2,
+        "run_text": "Document Control",
+        "style": "BP Head 1"
+      },
+      {
+        "para_index": 3,
+        "run_text": "Document History",
+        "style": "BP Head 2"
+      },
+      {
+        "para_index": 5,
+        "run_text": "Document Distribution",
+        "style": "BP Head 2"
+      },
+      {
+        "para_index": 7,
+        "run_text": "Approval",
+        "style": "BP Head 1"
+      },
+      {
+        "para_index": 8,
+        "run_text": "Bagian ini disediakan untuk persetujuan setelah draft proses bisnis, ruang lingk",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

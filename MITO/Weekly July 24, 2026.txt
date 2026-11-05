@@ -1,0 +1,29 @@
+MITO
+*24 Juli 2026*
+
+*1. Unrealized Gain/Loss*
+- Sudah naik ke production, pending konfirmasi PIC. Follow-up: Fira.
+*2. Reward, Free Product & AP Form Lintas OU*
+- Sudah naik ke production, pending pengecekan user ke Bu Meli. Follow-up: Fira.
+*3. Stock Minus dan Cost Minus*
+- Koreksi stock minus pada onhand (tidak ada valuasi svl dan inval), due *case-by-case*.
+- Testing adjustment, SVL, dan INVAL: Oli & Krisna. Status *DONE*.
+- Adjustment stock dan cost minus, due 24 Juli. Follow-up: *Oli*.
+*4. IMEI Duplikat*
+- Jumlah issue sudah minim. Dilanjutkan monitoring dan penanganan secara case-by-case. Follow-up: Oli
+*5. Advance Budget*
+- Update development sudah selesai, due 25 Juli. Status *Testing*. Follow-up: *Fira*.
+*6. Budget Project/Jobsheet*
+- Budget Jobsheet sudah tersedia di development. Pending pengecekan skema Budget Project, due ???. Follow-up: *Fira*. Tech: *Angga*.
+*7. COA Barang Dalam Transit*
+- Compare data GRV dari Mbak Gita dengan Bill di Odoo, due 25 Juli. Follow-up: *Fira*.
+- Adjust backdate inval GRV yang beda dengan tanggal Bill, due 25 Juli. Follow-up: *Fira*.
+*8. COA Barang Dalam Proses*
+- Mapping MO yang salah cost (inval) dari PO SKD, due 25 Juli.
+- Monitor produksi (MO) bulan Juni dan Juli untuk memastikan tidak ada kesalahan cost, due *On-going*. Follow-up: Oli.
+*9. COA Ayat Silang Pembelian*
+- Compare data GRV dari Mbak Gita dengan Landed Cost di Odoo. Status *Done*. Follow-up: *Fira*.
+- Konfirmasi adjustment *Maret* senilai *219,015,087.15* ke HPP, due *24 Juli*.
+- Konfirmasi adjustment *April* senilai *96,467,076.86* ke HPP, due *24 Juli*.
+- Konfirmasi ada 19 PO yang belum di landed senilai *521,592,756.13*, due *24 Juli*. Setelah di Landed akan ada selisih senilai *67,253,161.34*.
+*10. Fixing bug duplicate GR PO SKD, due 24 Juli. Status *Testing*. Follow-up: *Oli*.

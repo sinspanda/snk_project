@@ -1,0 +1,89 @@
+﻿,Issue Per:,Juli 2026,,,,,,,,,,
+,,,,,,,,,,,,
+#,Module,Issue,Description,PIC,16-Jul,17-Jul,18-Jul,19-Jul,20-Jul,21-Jul,22-Jul,23-Jul
+8,Inventory,"DO ganti font yang lebih kebaca, maks SLA 2 Hari (3 Juli beres).",,Oliver,Done,,,,,,,
+12,Accounting,Jurnal Adjustment unrealize gain or loss hanya muncul nilai 0 saja,"Saat ini secara wizard report Unrealize gain or loss sudah muncul nilai yg muncul di jurnal, namun ketika jurnal unrealize & reval terpost nilai debit kreditnya 0 semua","Angga, Safira","Sudah naik Dev, 
+awal bulan juni ga ada nilainya.. 
+akhir bulan juni ada nilainya. ",Sudah naik production dan dicek sama Pak Nirbito serta PIC masing-masing Company.,,,,,,"Follow up PIC, Fira"
+13,Sales,Button Reward; Button Free Product & nomor AP Form secara Operating unit HO minta bisa dipilih tim depo,"Saat ini, masih di filter by operating unit user namun minta dibuka akses untuk memilih nomor AP Form & reward selain operating unit dia di Quotation & sales Order
+Notes: ketika masuk modul Jobsheet, operating unit selain akses dia ga muncul transaksinya",Safira,"Dev sudah clear, 
+malam ini naik Production",,,,,,,"Sudah naik production.
+On check user, follow Bu Meli."
+14,Inventory,Fixing data Stock Minus,IMEI dan Lot yang minus akan diperbaiki via adjustment,"Oliver, Angga, Krisna","Belum semua, 
+masih ada sekitar 62 lot dengan stock minus.
+ada kendala terbentuk jurnal valuasi 
+
+Perlu tes bareng Angga & Krisna",,,,,,,"To Do:
+1. Tes adjustment, svl & inval. Oli & Krisna.
+2. Konfirmasi COA adjustment."
+16,Sales,"- Loading lama ketika input produk, input by add a line & catalog sama saja loading sekitar > 3 menit
+- Memory error di Quotation
+Product: 
+[RM - 001107] PIN SUPPORT GELAS - FOOD CHOPPER - CH200 - 2L 
+[RM - 001056] KARET ANTI SLIP - FOOD CHOPPER - CH200 - 2L -",,"Safira, Oliver","Issue masih terjadi untuk product:
+1. RM - 001107.
+2. RM 001056.",,,,,,"Done:
+1. Sudah naik production.",
+11,Accounting,Tambah info nomor AP Form di Financial Invoice Report,,Safira,"Done Dev,
+tunggu update lagi dari safira",,,"Done:
+1. Sudah naik production.",,,,
+15,Inventory,Fixing data imei duplikat,"imei yang duplikat dari DO, akan di adjustment untuk quantitynya saja",Oliver,Diselesaikan Case by case berdasarkan issue dari Pak Ade,,,,,,,"Notes:
+1. Sudah minim isu."
+16,Advance Budget,Update modul advance budget,,Safira,"Done Dev, sudah update modul advance budget. 
+
+Tunggu update lagi dari safira",,,,,,,"To Do:
+1. Cek skema budget advance, Fira."
+17,Budget Project,Fixing Jobsheet dan Budget Project,"1. Jobsheet plan vs actual.
+2. Budget Project, validasi budget secara total jobsheet ketika dibuat PR, PO, VB.","Safira, Angga","Jobsheet plan sudah naik ke dev. 
+
+Tunggu Testing Safira",,,,,,,"Done:
+1. Sudah naik budget jobsheet ke Dev.
+
+To Do:
+1. Cek skema budget project, Fira."
+18,Laporan Keuangan,"1. Checking Coa ""BArang dalam Transit""
+2. Coa Barang dalam transit bengkak sampai 600M","1. Mapping jurnal dengan transaksinya
+2. cek issue transaksi
+3. tentuin action koreksi","Krisna, Angga, Safira, Oliver","1. Cek transaksi2 Koreksi
+2. Matching in antara transaksi penjualan & Pembelian
+3. Cek PO SKD
+4. Cek komparasi laporan keuangan odoo 16 bulan maret - april
+
+1. GR.
+2. Bill.
+3. Koreksi.
+4. Bug sistem.
+5. DO.
+6. Invoice.
+
+1. Tarik stcok valuation as of maret. Keluarin COA stock val, persediaan.
+2. Tarik journal INVAL as of maret COA persediaan.",,,,,,,"Done:
+1. Sudah koreksi untuk PO SKD maret, april, mei, juni, juli.
+
+To Do:
+1. Follow up data GRV dari Mbak Gita, Fira.
+2. Compare data GRV dari Mbak Gita sama Bill, Fira."
+19,Laporan Keuangan,"1. Checking coa "" Ayat Silang Pembelian""
+2. Coa ayat silang seharusnya 0","1. Mapping jurnal dengan transaksinya
+2. cek issue transaksi
+3. tentuin action koreksi","Krisna, Angga, Safira, Oliver","1. Cek transaksi vendor bill
+2. Matching in antara bill dan transaksi landed cost",,,,,,,"To Do:
+1. Follow up data GRV dari Mbak Gita, Fira."
+,Laporan Keuangan,1. Checking coa Barang Dalam Proses.,,,,,,,,,,"To Do:
+1. Konfirmasi coa penyesuaian ke Bu Desty, Fira.
+2. ANGKA YANG HARUS DI ADJUST DI BULAN MARET -1,057,227,381.14, April 7,921,491,189.38
+3. Cek produksi(MO) juni & juli apakah ada salah cost lagi, Oli."
+,SFA,Ureq SFA,,,,,,,,,,"Ureq:
+1. SFA coba jadwalin jumat atau senin, Oli, Fira & Angga."
+,Jubelio,Implementasi Jubelio,,,,,,,,,,"Done:
+1. Integrasi sudah done.
+
+To Do:
+1. Konfirmasi cut off transaksi.
+2. Mapping product.
+
+Notes:
+1. Tarik data transaksi awal.
+2. Scheduler running per 10 menit.
+3. Tarik update transaksi yang belum done di Odoo."
+,Moka,Implementasi Moka,,,,,,,,,,

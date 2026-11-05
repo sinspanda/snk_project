@@ -1,0 +1,60 @@
+{
+  "preset": "standard_business_brief",
+  "header_pattern": "memo_masthead",
+  "page_dxa": [
+    12240,
+    15840
+  ],
+  "margin_dxa": 1440,
+  "header_footer_inches": 0.492,
+  "font": "Calibri",
+  "body": [
+    11,
+    0,
+    6,
+    1.1
+  ],
+  "h1": [
+    16,
+    16,
+    8,
+    "2E74B5"
+  ],
+  "h2": [
+    13,
+    12,
+    6,
+    "2E74B5"
+  ],
+  "h3": [
+    12,
+    8,
+    4,
+    "1F4D78"
+  ],
+  "list": {
+    "left": 720,
+    "hanging": 360,
+    "after": 8,
+    "line_twips": 280
+  },
+  "table": {
+    "width": 9360,
+    "indent": 120,
+    "margin": [
+      80,
+      80,
+      120,
+      120
+    ],
+    "fill": "F2F4F7"
+  },
+  "overrides": {
+    "Title": "26 pt black; before 0 after 4; line 1.1; bold",
+    "Subtitle": "14 pt muted; before 0 after 16; line 1.1",
+    "Meta": "9.5 pt muted; before 0 after 4; line 1.1",
+    "Table Text": "10 pt black; before 0 after 4; line 1.1",
+    "Callout": "11 pt; fill F4F6F9; before 6 after 10; line 1.1",
+    "Header/Footer": "9 pt muted; before 0 after 0; line 1.0; no rule"
+  }
+}

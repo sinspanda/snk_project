@@ -1,0 +1,91 @@
+{
+  "source": "C:\\Users\\SAYID\\OneDrive\\02. Project\\GPE\\10. Data Client\\Flow Process\\Plan to be\\Plan to be\\Asset To Be\\Flow Asset to be 16.7.26.bpm",
+  "sourceSha256": "6fc4c49a0a00aa0d45bc2178e21f4adee3554b833e22e39d6362e13e9eabc79a",
+  "output": "E:\\Panda\\Hogy\\GPE_Drawio\\Flow Asset to be 16.7.26.drawio",
+  "pages": [
+    {
+      "name": "Registrasi",
+      "pools": 1,
+      "lanes": 5,
+      "activities": 41,
+      "annotations": 7,
+      "dataObjects": 1,
+      "transitions": 45,
+      "associations": 9,
+      "drawioObjectsIncludingLabels": 125
+    },
+    {
+      "name": "Mutasi",
+      "pools": 1,
+      "lanes": 3,
+      "activities": 15,
+      "annotations": 7,
+      "transitions": 16,
+      "associations": 7,
+      "drawioObjectsIncludingLabels": 55
+    },
+    {
+      "name": "Sold",
+      "pools": 1,
+      "lanes": 5,
+      "activities": 18,
+      "annotations": 4,
+      "dataObjects": 1,
+      "transitions": 20,
+      "associations": 5,
+      "drawioObjectsIncludingLabels": 59
+    },
+    {
+      "name": "Audit",
+      "pools": 1,
+      "lanes": 2,
+      "activities": 14,
+      "annotations": 4,
+      "transitions": 14,
+      "associations": 3,
+      "drawioObjectsIncludingLabels": 39
+    },
+    {
+      "name": "Rental",
+      "pools": 1,
+      "lanes": 5,
+      "activities": 17,
+      "annotations": 3,
+      "transitions": 19,
+      "associations": 3,
+      "drawioObjectsIncludingLabels": 56
+    },
+    {
+      "name": "Scrap & Write Off",
+      "pools": 1,
+      "lanes": 3,
+      "activities": 12,
+      "annotations": 3,
+      "transitions": 12,
+      "associations": 2,
+      "drawioObjectsIncludingLabels": 37
+    },
+    {
+      "name": "4.0 Utang_Draft_NR",
+      "pools": 1,
+      "lanes": 10,
+      "activities": 51,
+      "annotations": 2,
+      "transitions": 55,
+      "associations": 1,
+      "drawioObjectsIncludingLabels": 138
+    },
+    {
+      "name": "4.3 Pengajuan Pembayaran",
+      "pools": 1,
+      "lanes": 3,
+      "activities": 18,
+      "annotations": 2,
+      "transitions": 20,
+      "associations": 1,
+      "drawioObjectsIncludingLabels": 55
+    }
+  ],
+  "verification": "All visible process nodes, lanes, transitions, annotations, data objects and associations preserved. All endpoints resolve. Source unchanged.",
+  "scope": "Editable diagram conversion. Bizagi execution and simulation settings are not draw.io executable semantics."
+}

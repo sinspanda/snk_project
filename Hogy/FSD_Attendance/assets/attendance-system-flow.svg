@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="2600" viewBox="0 0 1500 2600">
+<rect width="1500" height="2600" fill="white"/>
+<text x="750.0" y="40.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="600" fill="#24364b">System Flow Attendance</text>
+<text x="750.0" y="78.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#24364b">Kotak = aktivitas  |  Belah ketupat = decision  |  Cabang Ya / Tidak</text>
+<rect x="775.0" y="110.0" width="550" height="80" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="1050" y="134.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">HR klik Upload File</text>
+<text x="1050" y="165.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Periksa format isi TXT</text>
+<polygon points="1050,230.0 1210.0,295 1050,360.0 890.0,295" fill="#fff5d9" stroke="#24364b" stroke-width="2"/>
+<text x="1050" y="279.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">Format</text>
+<text x="1050" y="310.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">sesuai?</text>
+<polyline points="1050,190 1050,230" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="1050,230 1045.2153791247765,220.09508187412055 1054.7846208752235,220.09508187412055" fill="#64758a"/>
+<rect x="110.0" y="247.5" width="480" height="95" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="350" y="280.825" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Tampilkan error format</text>
+<text x="350" y="309.175" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">IT / Operator perbaiki dan export ulang</text>
+<polyline points="890,295 590,295" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="590,295 599.9049181258795,290.21537912477646 599.9049181258795,299.78462087522354" fill="#64758a"/>
+<text x="725" y="270.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Tidak</text>
+<polyline points="110,295 55,295 55,150 775,150" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="775,150 765.0950818741205,154.78462087522354 765.0950818741205,145.21537912477646" fill="#64758a"/>
+<rect x="775.0" y="410.0" width="550" height="80" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="1050" y="434.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Simpan record pada Staging</text>
+<text x="1050" y="465.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Status Pending</text>
+<polyline points="1050,360 1050,410" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="1050,410 1045.2153791247765,400.0950818741206 1054.7846208752235,400.0950818741206" fill="#64758a"/>
+<text x="1090" y="383.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Ya</text>
+<rect x="775.0" y="540.0" width="550" height="80" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="1050" y="564.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">HR memilih record</text>
+<text x="1050" y="595.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Klik Process</text>
+<polyline points="1050,490 1050,540" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="1050,540 1045.2153791247765,530.0950818741205 1054.7846208752235,530.0950818741205" fill="#64758a"/>
+<rect x="775.0" y="670.0" width="550" height="90" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="1050" y="699.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Lapis 1</text>
+<text x="1050" y="730.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Validasi dan konversi seluruh pilihan</text>
+<polyline points="1050,620 1050,670" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="1050,670 1045.2153791247765,660.0950818741205 1054.7846208752235,660.0950818741205" fill="#64758a"/>
+<polygon points="1050,802.5 1225.0,875 1050,947.5 875.0,875" fill="#fff5d9" stroke="#24364b" stroke-width="2"/>
+<text x="1050" y="859.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">Seluruh pilihan</text>
+<text x="1050" y="890.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">berhasil?</text>
+<polyline points="1050,760 1050,802" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="1050,802 1045.2153791247765,792.0950818741205 1054.7846208752235,792.0950818741205" fill="#64758a"/>
+<rect x="775.0" y="1000.0" width="550" height="80" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="1050" y="1024.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Simpan hasil Attendance</text>
+<text x="1050" y="1055.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Status record diperbarui</text>
+<polyline points="1050,948 1050,1000" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="1050,1000 1045.2153791247765,990.0950818741205 1054.7846208752235,990.0950818741205" fill="#64758a"/>
+<text x="1090" y="974.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Ya</text>
+<rect x="105.0" y="830.0" width="490" height="90" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="350" y="860.15" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Rollback percobaan bersama</text>
+<text x="350" y="889.85" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Mulai fallback per record</text>
+<polyline points="875,875 595,875" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="595,875 604.9049181258795,870.2153791247765 604.9049181258795,879.7846208752235" fill="#64758a"/>
+<text x="735" y="848.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Tidak</text>
+<rect x="105.0" y="1000.0" width="490" height="80" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="350" y="1025.15" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Ambil record berikutnya</text>
+<text x="350" y="1054.85" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Urut employee dan timestamp</text>
+<polyline points="350,920 350,1000" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="350,1000 345.21537912477646,990.0950818741205 354.78462087522354,990.0950818741205" fill="#64758a"/>
+<rect x="105.0" y="1130.0" width="490" height="80" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="350" y="1155.15" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Validasi dan konversi</text>
+<text x="350" y="1184.85" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">record tersebut</text>
+<polyline points="350,1080 350,1130" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="350,1130 345.21537912477646,1120.0950818741205 354.78462087522354,1120.0950818741205" fill="#64758a"/>
+<polygon points="350,1260.0 490.0,1325 350,1390.0 210.0,1325" fill="#fff5d9" stroke="#24364b" stroke-width="2"/>
+<text x="350" y="1309.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">Record</text>
+<text x="350" y="1340.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">berhasil?</text>
+<polyline points="350,1210 350,1260" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="350,1260 345.21537912477646,1250.0950818741205 354.78462087522354,1250.0950818741205" fill="#64758a"/>
+<rect x="27.5" y="1432.5" width="285" height="85" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="170" y="1460.825" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Simpan hasil</text>
+<text x="170" y="1489.175" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Processed / Duplicate</text>
+<rect x="415.0" y="1432.5" width="310" height="85" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="570" y="1460.825" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Rollback record</text>
+<text x="570" y="1489.175" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Failed dan pesan error</text>
+<polyline points="210,1325 170,1325 170,1432" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="170,1432 165.21537912477646,1422.0950818741205 174.78462087522354,1422.0950818741205" fill="#64758a"/>
+<text x="145" y="1390.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Ya</text>
+<polyline points="490,1325 570,1325 570,1432" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="570,1432 565.2153791247765,1422.0950818741205 574.7846208752235,1422.0950818741205" fill="#64758a"/>
+<text x="620" y="1390.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Tidak</text>
+<polygon points="350,1575.0 505.0,1640 350,1705.0 195.0,1640" fill="#fff5d9" stroke="#24364b" stroke-width="2"/>
+<text x="350" y="1624.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">Masih ada</text>
+<text x="350" y="1655.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">record?</text>
+<polyline points="170,1518 170,1545 350,1545 350,1575" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="350,1575 345.21537912477646,1565.0950818741205 354.78462087522354,1565.0950818741205" fill="#64758a"/>
+<polyline points="570,1518 570,1545 350,1545" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="350,1545 359.9049181258794,1540.2153791247765 359.9049181258794,1549.7846208752235" fill="#64758a"/>
+<polyline points="195,1640 15,1640 15,1040 105,1040" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="105,1040 95.09508187412055,1044.7846208752235 95.09508187412055,1035.2153791247765" fill="#64758a"/>
+<text x="125" y="1610.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Ya</text>
+<rect x="775.0" y="1755.0" width="550" height="90" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="1050" y="1784.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">HR membuka Employee Attendance</text>
+<text x="1050" y="1815.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Memeriksa In/Out dan flag</text>
+<polyline points="350,1705 350,1800 775,1800" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="775,1800 765.0950818741205,1804.7846208752235 765.0950818741205,1795.2153791247765" fill="#64758a"/>
+<text x="410" y="1770.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Tidak</text>
+<polyline points="1050,1080 1050,1755" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="1050,1755 1045.2153791247765,1745.0950818741205 1054.7846208752235,1745.0950818741205" fill="#64758a"/>
+<polygon points="1050,1900.0 1205.0,1965 1050,2030.0 895.0,1965" fill="#fff5d9" stroke="#24364b" stroke-width="2"/>
+<text x="1050" y="1949.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">Perlu</text>
+<text x="1050" y="1980.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">koreksi?</text>
+<polyline points="1050,1845 1050,1900" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="1050,1900 1045.2153791247765,1890.0950818741205 1054.7846208752235,1890.0950818741205" fill="#64758a"/>
+<rect x="105.0" y="1920.0" width="490" height="90" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="350" y="1950.15" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">HR klik Edit</text>
+<text x="350" y="1979.85" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Ubah attendance dan klik Save</text>
+<polyline points="895,1965 595,1965" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="595,1965 604.9049181258795,1960.2153791247765 604.9049181258795,1969.7846208752235" fill="#64758a"/>
+<text x="750" y="1938.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Ya</text>
+<rect x="105.0" y="2070.0" width="490" height="80" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="350" y="2095.15" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Perbarui perhitungan</text>
+<text x="350" y="2124.85" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Simpan audit; raw tetap utuh</text>
+<polyline points="350,2010 350,2070" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="350,2070 345.21537912477646,2060.0950818741208 354.78462087522354,2060.0950818741208" fill="#64758a"/>
+<polyline points="350,2150 350,2210 700,2210 700,1800 775,1800" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="775,1800 765.0950818741205,1804.7846208752235 765.0950818741205,1795.2153791247765" fill="#64758a"/>
+<rect x="775.0" y="2242.5" width="550" height="95" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="1050" y="2275.15" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">HR selesai memverifikasi</text>
+<text x="1050" y="2304.85" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Data digunakan pada laporan / payroll</text>
+<polyline points="1050,2030 1050,2242" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="1050,2242 1045.2153791247765,2232.0950818741208 1054.7846208752235,2232.0950818741208" fill="#64758a"/>
+<text x="1090" y="2115.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Tidak</text>
+<text x="750" y="2460.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Record Failed dapat di-Retry setelah penyebab diperbaiki. Jika sumber salah, upload ulang file perbaikan.</text>
+<text x="750" y="2505.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Tidak ada Status batch. Missing Out adalah flag Attendance, bukan kegagalan otomatis Staging.</text>
+</svg>

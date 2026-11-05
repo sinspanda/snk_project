@@ -1,0 +1,3498 @@
+MICROSOFT DYNAMICS 365FOMICROSOFT DYNAMICS 365FO
+MICROSOFT DYNAMICS 365FO
+
+MICROSOFT DYNAMICS 365FO
+
+
+
+
+System BlueprintProject:Payroll SystemSystem BlueprintProject:Payroll System
+System Blueprint
+Project:
+Payroll System
+System Blueprint
+Project:
+Payroll System
+
+
+
+
+
+
+
+
+
+
+
+Prepared for:PT.Hogy IndonesiaPrepared for:PT.Hogy Indonesia
+
+
+
+Prepared for:
+PT.Hogy Indonesia
+
+
+
+
+
+Prepared for:
+PT.Hogy Indonesia
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+aaa
+
+
+
+
+
+
+
+
+Prepared by:PT.Nusantara Secom InfotechPrepared by:PT.Nusantara Secom Infotech
+Prepared by:
+PT.Nusantara Secom Infotech
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Prepared by:
+PT.Nusantara Secom Infotech
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Document Control
+Document History
+Version
+Date
+Author
+Description
+1.0
+July 20, 2026
+Krisna Prasetya
+Initial Document
+1.1
+August 4, 2026
+Oliver Raka
+Perubahan deliverable:
+Layanan mandiri karyawan dan atasan, pengajuan mandiri oleh karyawan akan tetap dilakukan diluar sistem.
+Penambahan configurasi master:
+Data karyawan;
+Data keluarga karyawan;
+Tabel upah.
+Pengeluaran dokumen cetakyang tidak akan dihasilkan dari sistem:
+Pengajuancuti;
+Surat pengajuan lembur.
+Perubahan laporan:
+Laporan absen, cuti, dan lembur menjadi 1(satu) rekap absensi karyawan.
+Penambahan laporan rekap gaji berdasarkan kategori.
+Perubahan alur proses:
+Pengajuan cuti, pengajuan dilakukan diluar sistem. HR Admin akan memasukan hasil pengajuan cuti kedalam permintaan cuti pada D365;
+Pengajuan lembur, pengajuan dilakukan diluar sistem. HR Admin akan memasukan hasil pengajuan lembur kedalam surat perintah lembur (SPL) pada D365.
+Pelampiran contoh output data finger print yang akan diunggah ke dalam D365.
+Penyesuaian alur proses payroll.
+1.2
+August 13, 2026
+Krisna Prasetya
+Penambahan keterangan:
+Hitungan gaji pada komponen THR.
+Pembentukan NPK pada data karyawan dengan perubahan status kepegawaian.
+Perhitungan keterlambatan absensi.
+Pengalokasian cuti untuk karyawan prorata.
+Penambahan report:
+Dokumen XML upload ke coretax.
+Laporan rekap gaji untuk korporat.
+1.3
+August 27, 2026
+Oliver Raka
+Penambahan Komponen Gaji
+Penambahan Tarif Pajak Pesangon
+Penambahan Report BPJS TK dan Report PPh 21
+1.4
+September 1, 2026
+Oliver Raka
+Penambahan Report Summary List Bank Transfer.
+1.5
+October 7, 2026
+Krisna Prasetya
+Penambahan keterangan data karyawan yang akan dioleh pada sistem tidak terikat pada jumlah saat dokumen disepakati.
+Penambahan jenis cuti setengah hari.
+Penambahan komponen gaji: Bonus Direksi dan Potongan lainnya.
+Penambahkan keterangan penggunaan form 1721.
+
+
+Document Distribution
+# of Copy
+Description
+Location
+1
+Diserahkan kepada PT. Hogy Indonesia.
+
+1
+Diserahkan kepada PT. Nusantara Secom Infotech. 
+
+Approval
+With signing this document, it means that the blueprint system is approved. This document signoff also indicate approval on all requirements and proposed solutions.
+PT. Hogy Indonesia
+Name
+Project Role
+Date
+Signed
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PT. Nusantara Secom Infotech
+Name
+Project Role
+Date
+Signed
+Alisa Nida Saputri
+Project Manager
+
+
+Tri Mardiyanti
+Financial and Accounting Consultant
+
+
+Krisna Prasetya
+HR Consultant
+
+
+Oliver Raka
+HR Consultant
+
+
+
+
+Table of Contents
+Document Control2
+Approval5
+Table of Contents6
+Legend9
+1.Project Overview10
+1.1.Overview10
+1.2.Project Scope10
+1.3.Deliverable11
+1.4.Modification12
+2.Master Data dan Konfigurasi15
+2.1.Manajemen Karyawan15
+2.1.1.Data Karyawan15
+2.1.2.Data Keluarga Karyawan16
+2.2.Komponen Gaji17
+2.3.PPH2122
+2.3.1.Metode Perhitungan22
+2.3.2.Master Penghasilan Tidak Kena Pajak23
+2.3.3.Tarif Pajak Pesangon23
+2.3.4.Tarif Progresif Pasal 1724
+2.3.5.Tarif Efektif Bulanan Kategori A25
+2.3.6.Tarif Efektif Bulanan Kategori B27
+2.3.7.Tarif Efektif Bulanan Kategori C29
+2.3.8.Tarif Efektif Harian30
+2.3.9.Parameter Pendukung Perhitungan31
+2.3.10.Struktur Master Data yang Disarankan32
+2.4.Tabel Upah33
+2.5.Employement Type35
+2.6.Site35
+2.7.Department36
+2.8.Section36
+2.9.Position38
+2.10.Job Level39
+2.11.Jadwal Shift39
+2.12.Tipe Cuti42
+2.13.Hitungan Lembur44
+3.Report dan Printout45
+3.1.Report45
+3.1.1.Laporan Absensi Karyawan45
+3.1.2.Rekap Absensi Karyawan47
+3.1.3.Laporan Korporat50
+3.1.4.Rekap Gaji berdasarkan Ketegori53
+3.1.5.eSPT / Form 1721-I55
+3.1.6.XML Upload Coretax55
+3.1.7.Bank Transfer77
+3.1.8.Report BPJS TK77
+3.1.9.Report PPh 2177
+3.2.Printout79
+3.2.1.Dokumen Paklaring79
+3.2.2.Slip Gaji80
+3.2.3.Bukti Potong PPh 21 (A1)83
+3.2.4.Mutasi85
+4.Alur Proses87
+4.1.Karyawan87
+4.1.1.Pendaftaran Karyawan87
+4.1.2.Pembuatan Kontrak Karyawan90
+4.1.3.Mutasi Karyawan93
+4.1.4.Pemberhentian Karyawan97
+4.2.Absensi101
+4.2.1.Pembuatan Working Schedule101
+4.2.2.Import Absensi Dari Finger104
+4.3.Cuti109
+4.3.1.Pengajuan Cuti109
+4.4.Lembur112
+4.4.1.Pengajuan Lembur112
+4.5.Payroll114
+Appendix120
+
+
+Legend
+
+
+
+Project Overview
+Overview
+Implementasi ini berfokus pada proses Payroll PT Hogy Indonesia menggunakan Microsoft Dynamics 365 Finance and Operations (D365FO).
+Ruang lingkup implementasi mencakup konfigurasi fondasi payroll berupa data karyawan, struktur organisasi, posisi, jabatan, hubungan kerja, dan informasi kompensasi, serta pengelolaan jadwal kerja, absensi, cuti, lembur, komponen penghasilan dan potongan, BPJS, PPh Pasal 21, pembayaran gaji melalui Bank Mandiri, dan posting jurnal payroll ke modul Keuangan.
+Konfigurasi, pengembangan, integrasi, dan perhitungan terkait payroll Indonesia termasuk dalam ruang lingkup implementasi sepanjang mengacu pada kebutuhan bisnis dan ketentuan yang telah disepakati dalam dokumen ini. Penyesuaian akibat perubahan peraturan selanjutnya mengikuti ketentuan pada bagian 1.5.
+Project Scope
+Area
+Scope
+Infrastructure
+Persiapan environment, konfigurasi sistem, pengaturan akses pengguna, serta dukungan deployment.
+System
+Penyusunan functional design, konfigurasi modul, serta pengembangan fitur yang diperlukan untuk proses Manajemen Karyawan, Absensi, Cuti, Lembur, dan Payroll.
+Data
+Persiapan dan migrasi master data, data awal, serta data transaksi yang diperlukan untuk pelaksanaan go-live.
+Integration
+Import data keluaran mesin fingerprint Amano serta data dari TA dan Daikintai untuk diproses menjadi data absensi karyawan.
+User Adoption
+User Acceptance Test (UAT), pendampingan pelatihan pengguna, persiapan operasional, serta dukungan selama proses go-live berdasarkan proses bisnis yang telah disepakati.
+
+
+Deliverable
+Implementasi ini akan menyampaikan:
+Konfigurasi dasar data karyawan, meliputi struktur organisasi, data pekerja, hubungan kerja, posisi, jabatan, kontrak(terkait gaji), alur persetujuan, dan hak akses pengguna.
+Mesin perhitungan payroll Indonesia dan area kerja payroll untuk memproses penghasilan, potongan, BPJS, PPh Pasal 21, penyesuaian retroaktif, perhitungan akhir karyawan, dan penutupan periode payroll. Perhitungan gaji termasuk dan tidak terbatas pada absensi, cuti, dan lembur.
+Integrasi dan rekonsiliasi data kehadiran, meliputi proses penampungan data, validasi, pengolahan, dan rekonsiliasi data absensi yang berasal dari mesin fingerprint Amano, TA, dan Daikintai.
+Laporan dan kontrol integrasi, meliputi laporan operasional, dokumen cetak, rekam jejak audit, penanganan kesalahan, kontrol integrasi, dan laporan rekonsiliasi berdasarkan peran pengguna.
+Dokumentasi implementasi, meliputi template migrasi data, buku kerja konfigurasi, skenario pengujian, panduan pengguna, dan panduan administrasi solusi.
+
+
+Modification
+Modifikasi dan pengembangan yang dilakukan untuk memenuhi kebutuhan bisnis PT Hogy Indonesia pada D365FO:
+Addon
+Description
+Key Features
+Employee Management
+Pengelolaan data karyawan yang terintegrasi dengan struktur organisasi dan payroll.
+Pendaftaran karyawan;
+Pembuatan kontrak;
+Mutasi karyawan;
+Pemberhentian karyawan;
+Riwayat perubahan data.
+Working Schedule Management
+Pengelolaan jadwal kerja karyawan berdasarkan pola kerja dan ketentuan perusahaan.
+Working schedule;
+shift reguler dan non-shift;
+Long shift;
+Driver/bus dan security;
+Jadwal Ramadan;
+Jadwal libur;
+Penempatan jadwal per karyawan atau unit kerja.
+Attendance Integration
+Import dan pengolahan data absensi dari sistem eksternal.
+Attendance staging;
+import data Amanodan Daikintai serta proses output dari TA;
+Validasi data;
+duplicate checking;
+rekonsiliasi jadwal dan fingerprint;
+Attendance exception.
+Leave Management
+Pengelolaan hak dan transaksi cuti berdasarkan kebijakan perusahaan.
+Pengajuan dan approval cuti;
+Cuti setengah hari;
+Validasi saldo;
+Special leave;
+Cuti maternity dan miscarriage;
+Hak cuti berdasarkan masa kerja.
+Cuti ganti hari.
+Overtime Management
+Pengelolaan pengajuan dan klaim lembur berdasarkan persetujuan dan realisasi kehadiran.
+Input SPL.
+Rekonsiliasi SPL dengan fingerprint aktual;
+Perhitungan multiplier dan hari libur.
+Indonesia Payroll
+Perhitungan payroll sesuai kebijakan perusahaan dan ketentuan payroll Indonesia.
+Penghasilan dan potongan;
+BPJS;
+PPh Pasal 21 gross-up;
+Bonus dan THR;
+Retroactive adjustment;
+Termination payroll;
+Perhitungan take-home pay.
+Payroll Workbench and Closing
+Pengendalian proses payroll dari pembukaan periode sampai payroll closing.
+Payroll period dan cut-off;
+Variable payroll input;
+Calculation dan recalculation;
+Exception handling;
+Approval payroll;
+Period closing;
+Audit trail.
+Payroll Payment and Finance Integration
+Integrasi hasil payroll dengan proses pembayaran dan pencatatan keuangan.
+File transfer Bank Mandiri;
+Payroll payment summary;
+Posting jurnal payroll;
+Account dan financial dimension mapping;
+Rekonsiliasi hasil posting.
+Payroll Reports and Documents
+Penyediaan laporan dan dokumen yang dihasilkan dari proses HR dan Payroll.
+Slip gaji;
+Laporan payroll;
+Laporan BPJS dan pajak;
+XML upload coretax;
+Form 1721-A1;
+Paklaring;
+Laporan rekonsiliasi.
+Workflow and Notification
+Pengelolaan approval dan pemberitahuan berdasarkan aktivitas HR dan Payroll.
+Workflow berbasis role;
+Approval notification;
+Contract expiry notification;
+Payroll exception notification;
+Notification template;
+Audit status dan approval history.
+Penyesuaian atas Perubahan Peraturan
+Apabila selama pelaksanaan implementasi terdapat perubahan peraturan atau ketentuan terkait payroll Indonesia, penyesuaian sistem dapat dilakukan melalui konfigurasi sepanjang perubahan tersebut bersifat minor, dapat diakomodasi oleh fitur yang tersedia, dan tidak mengubah alur proses bisnis maupun ruang lingkup implementasi yang telah disepakati.
+Perubahan yang bersifat minor mencakup penyesuaian nilai parameter, tarif, batas perhitungan, atau tanggal berlaku yang telah didukung oleh konfigurasi sistem. Setiap kebutuhan penyesuaian akan ditinjau terlebih dahulu untuk memastikan dampaknya terhadap proses operasional, perhitungan payroll, dan hasil keluaran sistem. Pelaksanaan penyesuaian dilakukan berdasarkan hasil tinjauan dan kesepakatan para pihak, serta melalui pengujian sebelum diterapkan.
+Apabila perubahan memerlukan pengembangan fitur baru, perubahan logika perhitungan yang tidak dapat diakomodasi melalui konfigurasi, modifikasi integrasi atau format pelaporan, maupun perubahan alur proses bisnis, kebutuhan tersebut akan diproses melalui mekanisme permintaan perubahan (change request). Ruang lingkup pekerjaan, biaya tambahan apabila ada, dan dampak terhadap jadwal pelaksanaan akan disepakati terlebih dahulu sebelum pekerjaan dilaksanakan.
+Penyesuaian setelah penyelesaian implementasi mengikuti ketentuan dukungan dan pemeliharaan yang disepakati secara terpisah.
+
+Master Data dan Konfigurasi
+Manajemen Karyawan
+Manajemen Karyawan merupakan fitur untuk mengelola data dan administrasi karyawan secara terpusat, mulai dari profil pribadi, jabatan, departemen, hingga status kepegawaian. Fitur ini membantu tim HR memantau perubahan data, menjaga kelengkapan informasi, dan mendukung proses administrasi karyawan secara lebih tertib dan efisien. Jumlah karyawan yang dapat dikelola tidak dibatasi, sehingga dapat menyesuaikan dengan kebutuhan dan pertumbuhan perusahaan.
+Data Karyawan
+Parameter/field akan ditambahkan atau sesuaikan dengan data yang diperlukan. Data penting karyawan yang terpakai pada system sebelumnya akan ditambahkan pada D365.
+
+Data Keluarga Karyawan
+
+
+Komponen Gaji
+NO
+SALARY COMPONEN
+UPAH
+KAPAN DITAMBAHKAN KE EMPLOYEE
+NILAI
+FIX VALUE / FORMULA
+KRITRIA POSISI / JABATAN
+KET
+1
+1. Basic Salary
+Ya
+auto add saat karyawan join
+input sesuai jabatan
+Fix / bln
+Sub Leader UP
+fix 1 bln
+2
+2. Basic Salary
+Ya
+auto add saat karyawan join
+input sesuai tabel gaji
+Fix / bln
+Operator - koordinator
+fix 1 bln
+3
+3. Tunjangan
+Tidak
+
+
+
+
+
+4
+a. Kehadiran
+Tidak
+auto add saat karyawan join
+angka fix
+Formula
+Operator - koordinator
+Khusus karyawan tetap
+5
+b. Haid
+Tidak
+Setting sesuai kriteria
+angka fix
+Formula
+All empoloyee
+Khusus karyawan tetap Wanita
+6
+c. Makan
+Tidak
+auto add saat karyawan join
+Sesuai kehadiran
+Formula
+All empoloyee
+
+7
+d. Transport
+Tidak
+
+
+
+
+
+8
+I. Allowance
+Tidak
+auto add saat karyawan join
+ Rp                                   12,190 
+Formula
+Operator - Foreman/Chief
+
+9
+I.1. Allowance
+Tidak
+Setting sesuai kriteria
+ Rp                                   13,190 
+Formula
+All empoloyee
+Motor
+10
+II. Fix transport
+Tidak
+Jika ada promosi jabatan
+angka fix
+Fix / bln
+Supervisor UP
+fix 1 bln
+11
+III. Lembur Spv up
+Tidak
+auto add saat karyawan join
+Sesuai jml lembur
+Formula
+Supervisor - Asr Manager
+
+12
+e. Shift 2
+Tidak
+auto add saat karyawan join
+ Rp                                     7,000 
+Formula
+All empoloyee
+
+13
+f. Penanggung jawab Shift
+Tidak
+auto add saat karyawan join
+Sesuai schedule
+Formula
+Koord - Spv
+
+14
+g. Dukacita
+Tidak
+Upload
+ Rp                                 800,000 
+Fix value
+All empoloyee
+Sesuai pengajuan
+15
+h. Sukacita (Kelahiran)
+
+Upload
+ Rp                              1,000,000 
+Fix value
+All empoloyee
+Sesuai pengajuan
+16
+i. Extra meal
+Tidak
+Upload
+ Rp                                   20,000 
+Fix value
+All empoloyee
+
+17
+j. Meal Ramadhan
+Tidak
+auto add saat karyawan join
+Sesuai kehadiran
+Formula
+All empoloyee
+
+18
+k. Kacamata
+Tidak
+Upload
+ Rp                                 500,000 
+Fix value
+All empoloyee
+Sesuai pengajuan
+19
+l. Komunikasi
+Tidak
+Setting sesuai kriteria
+Sesuai ketentuan
+Formula
+Spv - GM
+Khusus sales dan koordinator bus mendapatkan
+20
+4. Position Allow
+Tidak
+Jika ada promosi jabatan
+input sesuai jabatan
+Fix / bln
+Adm Up
+
+21
+5. Incentive
+Tidak
+auto add saat karyawan join
+input sesuai tabel gaji
+Fix / bln
+Operator - koordinator
+Khusus karyawan tetap
+22
+6. Perumahan
+Tidak
+auto add saat karyawan join
+ Rp                                   60,000 
+Fix / bln
+All empoloyee
+Khusus karyawan tetap
+23
+7. keluarga
+Tidak
+auto add saat karyawan join
+ Rp                                   60,000 
+Fix / bln
+All empoloyee
+Khusus karyawan
+24
+7.1. anak
+Tidak
+auto add saat karyawan join
+ Rp                                   40,000 
+Fix / bln
+All empoloyee
+Khusus karyawan
+25
+7.2. keluarga (janda)
+Tidak
+Setting sesuai kriteria
+ Rp                                   40,000 
+Fix / bln
+All empoloyee
+Khusus karyawan tetap wanita
+26
+8. Tunjangan pajak
+Tidak
+auto add saat karyawan join
+Sesuai bruto
+Formula
+All empoloyee
+
+27
+9. Asuransi Kesehatan swasta
+Tidak
+auto add saat karyawan join
+Sesuai jumlah upah
+Formula
+All empoloyee
+Khusus karyawan tetap
+28
+10. BPJS kes
+Tidak
+auto add saat karyawan join
+Sesuai jumlah upah
+Formula
+All empoloyee
+
+29
+11. BPJS TK
+Tidak
+auto add saat karyawan join
+Sesuai jumlah upah
+Formula
+All empoloyee
+
+30
+12. Adustment
+Tidak
+auto add saat karyawan join
+Sesuai jumlah koreksi
+Fix
+All empoloyee
+Upload
+31
+13. Bonus
+
+Upload pada saat pembayaran bonus
+Sesuai ketentuan
+Formula
+All empoloyee
+Upload
+32
+14. THR
+
+Upload pada saat pembayaran THR
+Sesuai jumlah upah
+Fix
+All empoloyee
+Upload
+33
+15. Allowance USD ( tunjangan USD )
+
+Setting sesuai kriteria
+Sesuai ketentuan
+Fix / bln
+Ekspatriat
+Upload
+34
+15.1 Sales insentif
+
+Setting sesuai kriteria
+Sesuai ketentuan
+Fix / bln
+Sales
+Upload
+35
+16. Tunjangan skil ( transleter, PJT )
+
+Setting sesuai kriteria
+Sesuai ketentuan
+Fix / bln
+Transleter & PJT
+
+36
+17. Leave paid
+
+Upload sesuai sisa cuti
+Sesuai sisa cuti
+Formula
+All empoloyee
+Upload
+37
+18. Potongan koperasi
+
+Upload setiap bulan
+Sesuai tabel upload
+Fix
+All empoloyee
+Sesuai data Koperasi
+38
+19. Pesangon
+
+
+
+
+
+
+39
+a. Mengundurkan diri
+
+auto add saat karyawan join
+Sesuai ketentuan
+Formula
+All empoloyee
+Khusus karyawan tetap
+40
+b. PHK
+
+auto add saat karyawan join
+Sesuai ketentuan
+Formula
+All empoloyee
+Khusus karyawan tetap
+41
+c. Pension
+
+auto add saat karyawan join
+Sesuai ketentuan
+Formula
+All empoloyee
+
+42
+d. Pension dini
+
+auto add saat karyawan join
+Sesuai ketentuan
+Formula
+All empoloyee
+
+43
+e. Uang kompensasi
+
+Upload setiap bulan
+Sesuai ketentuan
+Fix
+All empoloyee
+Upload
+44
+20. Potongan absen
+
+auto add saat karyawan join
+Sesuai ketentuan
+Formula
+Operator - Spv
+
+45
+21. Prorate
+
+auto add saat karyawan join
+Sesuai kehadiran
+Formula
+All empoloyee
+
+46
+22. Over time
+
+auto add saat karyawan join
+Sesuai ketentuan
+Formula
+Operator - Spv
+
+47
+23. COS serikat pekerja
+
+Upload setiap bulan
+Sesuai tabel upload
+Fix
+All empoloyee
+Sesuai data Serikat
+48
+24. Incentive Tax
+
+Jika ada relaksasi pajak
+Sesuai ketentuan
+Formula
+Sesuai kategori
+
+49
+25 Rapel Incentive Tax
+
+Jika ada relaksasi pajak
+Sesuai ketentuan
+Formula
+Sesuai kategori
+Jika ada rapel
+50
+25. Tax Natura
+
+Upload
+Sesuai ketentuan
+Fix
+BOD & Ekspatriat
+
+51
+26. Other Bank
+
+auto add saat karyawan join
+ Rp                                     9,000 
+Fix
+All empoloyee
+
+52
+27. Bonus Direksi (Deviden)
+
+Upload
+Sesuai nilai bonus
+Fix
+BOD
+
+53
+24. UO (Utility Operator)
+
+Setting sesuai kriteria
+Sesuai ketentuan
+Fix / bln
+Operator
+
+54
+Bonus Direksi
+
+
+
+
+Khusus Direksi
+Perlakuan pajak khusus.
+55
+Potongan lain-lain
+
+Ketika ada potongan
+
+
+
+
+
+PPH21
+Metode Perhitungan
+Penerima Penghasilan
+Masa Pajak
+Dasar Perhitungan
+Tarif
+Pegawai tetap
+Selain masa pajak terakhir
+Penghasilan bruto bulanan
+Tarif Efektif Rata-Rata (TER) Bulanan
+Pegawai tetap
+Masa pajak terakhir
+Penghasilan Kena Pajak setahun atau bagian tahun pajak
+Tarif progresif Pasal 17
+Pegawai tidak tetap dengan pembayaran bulanan
+Setiap masa pajak
+Penghasilan bruto bulanan
+TER Bulanan
+Pegawai tidak tetap dengan penghasilan sampai dengan Rp2.500.000 per hari
+Setiap pembayaran
+Penghasilan bruto atau rata-rata penghasilan bruto sehari
+TER Harian
+Pegawai tidak tetap dengan penghasilan di atas Rp2.500.000 per hari
+Setiap pembayaran
+50% dari penghasilan bruto
+Tarif progresif Pasal 17
+Bukan pegawai
+Setiap pembayaran
+50% dari penghasilan bruto sesuai ketentuan
+Tarif progresif Pasal 17
+Peserta kegiatan
+Setiap pembayaran
+Penghasilan bruto
+Tarif progresif Pasal 17
+
+
+
+
+Masa pajak terakhir adalah bulan Desember atau bulan terakhir karyawan bekerja. PPh Pasal 21 masa pajak terakhir dihitung sebagai pajak terutang setahun dikurangi PPh Pasal 21 yang telah dipotong pada masa pajak sebelumnya.
+
+Master Penghasilan Tidak Kena Pajak
+Kode PTKP
+Status
+Jumlah Tanggungan
+PTKP Setahun
+Kategori TER
+TK/0
+Tidak kawin
+0
+Rp54.000.000
+A
+TK/1
+Tidak kawin
+1
+Rp58.500.000
+A
+TK/2
+Tidak kawin
+2
+Rp63.000.000
+B
+TK/3
+Tidak kawin
+3
+Rp67.500.000
+B
+K/0
+Kawin
+0
+Rp58.500.000
+A
+K/1
+Kawin
+1
+Rp63.000.000
+B
+K/2
+Kawin
+2
+Rp67.500.000
+B
+K/3
+Kawin
+3
+Rp72.000.000
+C
+K/I/0
+Kawin, penghasilan istri digabung
+0
+Rp112.500.000
+Tidak ditetapkan dalam kategori TER A–C
+K/I/1
+Kawin, penghasilan istri digabung
+1
+Rp117.000.000
+Tidak ditetapkan dalam kategori TER A–C
+K/I/2
+Kawin, penghasilan istri digabung
+2
+Rp121.500.000
+Tidak ditetapkan dalam kategori TER A–C
+K/I/3
+Kawin, penghasilan istri digabung
+3
+Rp126.000.000
+Tidak ditetapkan dalam kategori TER A–C
+Status PTKP ditentukan berdasarkan kondisi karyawan pada awal tahun pajak.
+Tarif Pajak Pesangon
+Lapisan
+Lapisan Penghasilan Bruto Pesangon
+
+Tarif PPh 21 Final
+1
+≤ Rp 50.000.000
+0% (tidak dipotong pajak)
+2
+> Rp 50.000.000 – Rp 100.000.000
+5%
+3
+> Rp 100.000.000 – Rp 500.000.000
+15%
+4
+> Rp 500.000.000
+25%
+
+Tarif Progresif Pasal 17
+Lapisan
+Penghasilan Kena Pajak Setahun
+Tarif
+1
+Sampai dengan Rp60.000.000
+5%
+2
+Di atas Rp60.000.000 sampai dengan Rp250.000.000
+15%
+3
+Di atas Rp250.000.000 sampai dengan Rp500.000.000
+25%
+4
+Di atas Rp500.000.000 sampai dengan Rp5.000.000.000
+30%
+5
+Di atas Rp5.000.000.000
+35%
+Tarif diterapkan secara progresif untuk setiap lapisan Penghasilan Kena Pajak. Penghasilan Kena Pajak dibulatkan ke bawah hingga ribuan rupiah penuh.
+Tarif Efektif Bulanan Kategori A
+Berlaku untuk status PTKP TK/0, TK/1, dan K/0.
+
+Kode
+Penghasilan Bruto Bulanan
+Tarif
+A01
+Sampai dengan Rp5.400.000
+0%
+A02
+Di atas Rp5.400.000 sampai dengan Rp5.650.000
+0,25%
+A03
+Di atas Rp5.650.000 sampai dengan Rp5.950.000
+0,50%
+A04
+Di atas Rp5.950.000 sampai dengan Rp6.300.000
+0,75%
+A05
+Di atas Rp6.300.000 sampai dengan Rp6.750.000
+1,00%
+A06
+Di atas Rp6.750.000 sampai dengan Rp7.500.000
+1,25%
+A07
+Di atas Rp7.500.000 sampai dengan Rp8.550.000
+1,50%
+A08
+Di atas Rp8.550.000 sampai dengan Rp9.650.000
+1,75%
+A09
+Di atas Rp9.650.000 sampai dengan Rp10.050.000
+2,00%
+A10
+Di atas Rp10.050.000 sampai dengan Rp10.350.000
+2,25%
+A11
+Di atas Rp10.350.000 sampai dengan Rp10.700.000
+2,50%
+A12
+Di atas Rp10.700.000 sampai dengan Rp11.050.000
+3,00%
+A13
+Di atas Rp11.050.000 sampai dengan Rp11.600.000
+3,50%
+A14
+Di atas Rp11.600.000 sampai dengan Rp12.500.000
+4,00%
+A15
+Di atas Rp12.500.000 sampai dengan Rp13.750.000
+5,00%
+A16
+Di atas Rp13.750.000 sampai dengan Rp15.100.000
+6,00%
+A17
+Di atas Rp15.100.000 sampai dengan Rp16.950.000
+7,00%
+A18
+Di atas Rp16.950.000 sampai dengan Rp19.750.000
+8,00%
+A19
+Di atas Rp19.750.000 sampai dengan Rp24.150.000
+9,00%
+A20
+Di atas Rp24.150.000 sampai dengan Rp26.450.000
+10,00%
+A21
+Di atas Rp26.450.000 sampai dengan Rp28.000.000
+11,00%
+A22
+Di atas Rp28.000.000 sampai dengan Rp30.050.000
+12,00%
+A23
+Di atas Rp30.050.000 sampai dengan Rp32.400.000
+13,00%
+A24
+Di atas Rp32.400.000 sampai dengan Rp35.400.000
+14,00%
+A25
+Di atas Rp35.400.000 sampai dengan Rp39.100.000
+15,00%
+A26
+Di atas Rp39.100.000 sampai dengan Rp43.850.000
+16,00%
+A27
+Di atas Rp43.850.000 sampai dengan Rp47.800.000
+17,00%
+A28
+Di atas Rp47.800.000 sampai dengan Rp51.400.000
+18,00%
+A29
+Di atas Rp51.400.000 sampai dengan Rp56.300.000
+19,00%
+A30
+Di atas Rp56.300.000 sampai dengan Rp62.200.000
+20,00%
+A31
+Di atas Rp62.200.000 sampai dengan Rp68.600.000
+21,00%
+A32
+Di atas Rp68.600.000 sampai dengan Rp77.500.000
+22,00%
+A33
+Di atas Rp77.500.000 sampai dengan Rp89.000.000
+23,00%
+A34
+Di atas Rp89.000.000 sampai dengan Rp103.000.000
+24,00%
+A35
+Di atas Rp103.000.000 sampai dengan Rp125.000.000
+25,00%
+A36
+Di atas Rp125.000.000 sampai dengan Rp157.000.000
+26,00%
+A37
+Di atas Rp157.000.000 sampai dengan Rp206.000.000
+27,00%
+A38
+Di atas Rp206.000.000 sampai dengan Rp337.000.000
+28,00%
+A39
+Di atas Rp337.000.000 sampai dengan Rp454.000.000
+29,00%
+A40
+Di atas Rp454.000.000 sampai dengan Rp550.000.000
+30,00%
+A41
+Di atas Rp550.000.000 sampai dengan Rp695.000.000
+31,00%
+A42
+Di atas Rp695.000.000 sampai dengan Rp910.000.000
+32,00%
+A43
+Di atas Rp910.000.000 sampai dengan Rp1.400.000.000
+33,00%
+A44
+Di atas Rp1.400.000.000
+34,00%
+
+
+Tarif Efektif Bulanan Kategori B
+Berlaku untuk status PTKP TK/2, TK/3, K/1, dan K/2.
+
+Kode
+Penghasilan Bruto Bulanan
+Tarif
+B01
+Sampai dengan Rp6.200.000
+0%
+B02
+Di atas Rp6.200.000 sampai dengan Rp6.500.000
+0,25%
+B03
+Di atas Rp6.500.000 sampai dengan Rp6.850.000
+0,50%
+B04
+Di atas Rp6.850.000 sampai dengan Rp7.300.000
+0,75%
+B05
+Di atas Rp7.300.000 sampai dengan Rp9.200.000
+1,00%
+B06
+Di atas Rp9.200.000 sampai dengan Rp10.750.000
+1,50%
+B07
+Di atas Rp10.750.000 sampai dengan Rp11.250.000
+2,00%
+B08
+Di atas Rp11.250.000 sampai dengan Rp11.600.000
+2,50%
+B09
+Di atas Rp11.600.000 sampai dengan Rp12.600.000
+3,00%
+B10
+Di atas Rp12.600.000 sampai dengan Rp13.600.000
+4,00%
+B11
+Di atas Rp13.600.000 sampai dengan Rp14.950.000
+5,00%
+B12
+Di atas Rp14.950.000 sampai dengan Rp16.400.000
+6,00%
+B13
+Di atas Rp16.400.000 sampai dengan Rp18.450.000
+7,00%
+B14
+Di atas Rp18.450.000 sampai dengan Rp21.850.000
+8,00%
+B15
+Di atas Rp21.850.000 sampai dengan Rp26.000.000
+9,00%
+B16
+Di atas Rp26.000.000 sampai dengan Rp27.700.000
+10,00%
+B17
+Di atas Rp27.700.000 sampai dengan Rp29.350.000
+11,00%
+B18
+Di atas Rp29.350.000 sampai dengan Rp31.450.000
+12,00%
+B19
+Di atas Rp31.450.000 sampai dengan Rp33.950.000
+13,00%
+B20
+Di atas Rp33.950.000 sampai dengan Rp37.100.000
+14,00%
+B21
+Di atas Rp37.100.000 sampai dengan Rp41.100.000
+15,00%
+B22
+Di atas Rp41.100.000 sampai dengan Rp45.800.000
+16,00%
+B23
+Di atas Rp45.800.000 sampai dengan Rp49.500.000
+17,00%
+B24
+Di atas Rp49.500.000 sampai dengan Rp53.800.000
+18,00%
+B25
+Di atas Rp53.800.000 sampai dengan Rp58.500.000
+19,00%
+B26
+Di atas Rp58.500.000 sampai dengan Rp64.000.000
+20,00%
+B27
+Di atas Rp64.000.000 sampai dengan Rp71.000.000
+21,00%
+B28
+Di atas Rp71.000.000 sampai dengan Rp80.000.000
+22,00%
+B29
+Di atas Rp80.000.000 sampai dengan Rp93.000.000
+23,00%
+B30
+Di atas Rp93.000.000 sampai dengan Rp109.000.000
+24,00%
+B31
+Di atas Rp109.000.000 sampai dengan Rp129.000.000
+25,00%
+B32
+Di atas Rp129.000.000 sampai dengan Rp163.000.000
+26,00%
+B33
+Di atas Rp163.000.000 sampai dengan Rp211.000.000
+27,00%
+B34
+Di atas Rp211.000.000 sampai dengan Rp374.000.000
+28,00%
+B35
+Di atas Rp374.000.000 sampai dengan Rp459.000.000
+29,00%
+B36
+Di atas Rp459.000.000 sampai dengan Rp555.000.000
+30,00%
+B37
+Di atas Rp555.000.000 sampai dengan Rp704.000.000
+31,00%
+B38
+Di atas Rp704.000.000 sampai dengan Rp957.000.000
+32,00%
+B39
+Di atas Rp957.000.000 sampai dengan Rp1.405.000.000
+33,00%
+B40
+Di atas Rp1.405.000.000
+34,00%
+
+
+Tarif Efektif Bulanan Kategori C
+Berlaku untuk status PTKP K/3.
+
+Kode
+Penghasilan Bruto Bulanan
+Tarif
+C01
+Sampai dengan Rp6.600.000
+0%
+C02
+Di atas Rp6.600.000 sampai dengan Rp6.950.000
+0,25%
+C03
+Di atas Rp6.950.000 sampai dengan Rp7.350.000
+0,50%
+C04
+Di atas Rp7.350.000 sampai dengan Rp7.800.000
+0,75%
+C05
+Di atas Rp7.800.000 sampai dengan Rp8.850.000
+1,00%
+C06
+Di atas Rp8.850.000 sampai dengan Rp9.800.000
+1,25%
+C07
+Di atas Rp9.800.000 sampai dengan Rp10.950.000
+1,50%
+C08
+Di atas Rp10.950.000 sampai dengan Rp11.200.000
+1,75%
+C09
+Di atas Rp11.200.000 sampai dengan Rp12.050.000
+2,00%
+C10
+Di atas Rp12.050.000 sampai dengan Rp12.950.000
+3,00%
+C11
+Di atas Rp12.950.000 sampai dengan Rp14.150.000
+4,00%
+C12
+Di atas Rp14.150.000 sampai dengan Rp15.550.000
+5,00%
+C13
+Di atas Rp15.550.000 sampai dengan Rp17.050.000
+6,00%
+C14
+Di atas Rp17.050.000 sampai dengan Rp19.500.000
+7,00%
+C15
+Di atas Rp19.500.000 sampai dengan Rp22.700.000
+8,00%
+C16
+Di atas Rp22.700.000 sampai dengan Rp26.600.000
+9,00%
+C17
+Di atas Rp26.600.000 sampai dengan Rp28.100.000
+10,00%
+C18
+Di atas Rp28.100.000 sampai dengan Rp30.100.000
+11,00%
+C19
+Di atas Rp30.100.000 sampai dengan Rp32.600.000
+12,00%
+C20
+Di atas Rp32.600.000 sampai dengan Rp35.400.000
+13,00%
+C21
+Di atas Rp35.400.000 sampai dengan Rp38.900.000
+14,00%
+C22
+Di atas Rp38.900.000 sampai dengan Rp43.000.000
+15,00%
+C23
+Di atas Rp43.000.000 sampai dengan Rp47.400.000
+16,00%
+C24
+Di atas Rp47.400.000 sampai dengan Rp51.200.000
+17,00%
+C25
+Di atas Rp51.200.000 sampai dengan Rp55.800.000
+18,00%
+C26
+Di atas Rp55.800.000 sampai dengan Rp60.400.000
+19,00%
+C27
+Di atas Rp60.400.000 sampai dengan Rp66.700.000
+20,00%
+C28
+Di atas Rp66.700.000 sampai dengan Rp74.500.000
+21,00%
+C29
+Di atas Rp74.500.000 sampai dengan Rp83.200.000
+22,00%
+C30
+Di atas Rp83.200.000 sampai dengan Rp95.600.000
+23,00%
+C31
+Di atas Rp95.600.000 sampai dengan Rp110.000.000
+24,00%
+C32
+Di atas Rp110.000.000 sampai dengan Rp134.000.000
+25,00%
+C33
+Di atas Rp134.000.000 sampai dengan Rp169.000.000
+26,00%
+C34
+Di atas Rp169.000.000 sampai dengan Rp221.000.000
+27,00%
+C35
+Di atas Rp221.000.000 sampai dengan Rp390.000.000
+28,00%
+C36
+Di atas Rp390.000.000 sampai dengan Rp463.000.000
+29,00%
+C37
+Di atas Rp463.000.000 sampai dengan Rp561.000.000
+30,00%
+C38
+Di atas Rp561.000.000 sampai dengan Rp709.000.000
+31,00%
+C39
+Di atas Rp709.000.000 sampai dengan Rp965.000.000
+32,00%
+C40
+Di atas Rp965.000.000 sampai dengan Rp1.419.000.000
+33,00%
+C41
+Di atas Rp1.419.000.000
+34,00%
+
+Tarif Efektif Harian
+Kode
+Penghasilan Bruto Harian
+Tarif
+H01
+Sampai dengan Rp450.000
+0%
+H02
+Di atas Rp450.000 sampai dengan Rp2.500.000
+0,50%
+H03
+Di atas Rp2.500.000
+Tarif Pasal 17 × 50% dari penghasilan bruto
+
+
+Parameter Pendukung Perhitungan
+Parameter
+Nilai
+Penggunaan
+Persentase biaya jabatan
+5%
+Pengurang penghasilan bruto pada perhitungan masa pajak terakhir
+Maksimum biaya jabatan per bulan
+Rp500.000
+Dikalikan jumlah bulan bekerja
+Maksimum biaya jabatan per tahun
+Rp6.000.000
+Batas maksimal satu tahun
+Pembulatan Penghasilan Kena Pajak
+Rp1.000
+Dibulatkan ke bawah hingga ribuan rupiah penuh
+Maksimum jumlah tanggungan
+3 orang
+Penentuan status PTKP
+Tanggal mulai berlaku TER
+1 Januari 2024
+Tanggal efektif konfigurasi
+Masa pajak terakhir
+Desember atau bulan terakhir bekerja
+Rekonsiliasi pajak tahunan atau final settlement
+
+
+Struktur Master Data yang Disarankan
+Nama Field
+Tipe Data
+Keterangan
+Tax Rate Code
+Teks
+Kode tarif, misalnya A01, B01, atau C01
+Tax Rate Type
+Pilihan
+TER Bulanan, TER Harian, atau Tarif Pasal 17
+TER Category
+Pilihan
+A, B, atau C
+PTKP Status
+Teks
+TK/0, TK/1, K/0, dan seterusnya
+Minimum Gross Income
+Angka
+Batas bawah penghasilan bruto
+Minimum Inclusive
+Ya/Tidak
+Menentukan apakah batas bawah termasuk dalam rentang
+Maximum Gross Income
+Angka
+Batas atas penghasilan bruto
+Maximum Inclusive
+Ya/Tidak
+Menentukan apakah batas atas termasuk dalam rentang
+Rate Percentage
+Desimal
+Tarif dalam bentuk persentase
+Effective From
+Tanggal
+Tanggal mulai berlakunya tarif
+Effective To
+Tanggal
+Tanggal berakhirnya tarif
+Legal Basis
+Teks
+Referensi regulasi yang digunakan
+Active
+Ya/Tidak
+Status penggunaan konfigurasi
+Jika field tarif pada D365FO menggunakan nilai persentase, tarif 0,25% disimpan sebagai 0,25. Jika field menggunakan faktor desimal, tarif tersebut disimpan sebagai 0,0025.
+Perhitungan gross-up menggunakan tabel tarif yang sama. Perbedaannya terdapat pada proses iterasi tunjangan pajak sampai nilai tunjangan pajak sama dengan PPh Pasal 21 yang dihitung.
+
+
+Tabel Upah
+Referensi nilai komponen gaji untuk posisi tertentu.
+
+
+Employement Type
+Target Code
+Name
+PERMANENT
+Permanent
+CONTRACT-12M
+Contract 12 Months
+CONTRACT-6M
+Contract 6 Months
+CONTRACT-3M
+Contract 3 Months
+CONTRACT-REHIRE
+Contract Rehire
+EXPATRIATE
+Expatriate
+EXPAT-ADVISOR
+Expatriate Advisor
+ADVISOR
+Contract Advisor
+INTERN
+Magang
+
+Site
+Site merupakan operating unit utama di bawah legal entity PT. Hogy Indonesia. Mapping sumber menunjukkan kelompok utama seperti Production, QAQC, Engineering, Accounting/Finance, HRGA, Purchasing/Trading, Marketing/Sales, R&D dan Corporate. Department code harus digunakan untuk organization hierarchy, security scope, cost allocation dan financial dimension.
+
+Code
+Name
+HOGY 1
+HOGY 1
+HOGY 2
+HOGY 2
+HIJAKARTA
+HI JAKARTA
+
+
+Department
+Department merupakan operating unit utama di bawah legal entity PT. Hogy Indonesia. Mapping sumber menunjukkan kelompok utama seperti Production, QAQC, Engineering, Accounting/Finance, HRGA, Purchasing/Trading, Marketing/Sales, R&D dan Corporate. Department code harus digunakan untuk organization hierarchy, security scope, cost allocation dan financial dimension.
+
+Code
+Name
+PRD
+PRODUCTION
+QAC
+QAQC
+RND
+RND
+ENG
+ENGINEERING
+FAC
+ACCOUNTING
+HGA
+HRGA
+TDP
+TDP
+MKT
+MARKETING
+CRP
+COORPORATE
+
+Section
+Section adalah unit operasional di bawah department dan menjadi basis assignment employee, working schedule, approval manager, actual hour report dan payroll cost analysis. Sumber memuat lebih dari 60 section/organization, termasuk Accessories, Cap, Drape, Sewing, Packing, Sterilization, Warehouse, QA/QC, HR, IT, Security, Driver, Sales dan Expatriate.
+
+Code
+Name
+ACC
+ACCESSORIES
+CAP
+CAP
+DRP
+DRAPE
+PCM
+PCMC
+SW1
+SEWING-1
+SW3
+SEWING-3
+FLD
+FOLDING
+PAC
+PACKING GOWN
+HAI
+HAIEKI TUBE
+INJ
+INJECTION
+VCM
+VACUUM FORMING
+NSO
+NON STANDARD OVERALL DRAPE
+NSD
+NON STANDARD DRAPE
+NSW
+NON STANDARD SEWING
+OAD
+OVERALL DRAPE
+SFT
+SEFTAL
+SSW
+STANDARD SEWING
+UNW
+UNDERWEAR
+CRD
+CARDYRODE
+ESH
+ESUMARUHI
+SGP
+SURGICAL PACK
+CUT
+CUTTING
+PLC
+PLASTIC CONNECTOR
+STR
+STERILL
+TVK
+TYVEK
+PDR
+PART DRAPE
+PLY
+POLYBAG
+QC1
+QC
+EDP
+EDP
+PRD1
+PRODUCTION
+QA1
+QA
+RND1
+RND1
+ENG1
+ENGINEERING
+MEC
+MEKANIK
+WHS
+WAREHOUSE
+MCL
+MATERIAL CONTROL
+PCL
+PRODUCTION CONTROL
+FIN
+FINANCE
+ACT
+ACCOUNTING
+TAX
+TAX
+HR1
+HR
+GA1
+GA
+LEG
+LEGAL
+CLN
+CLEANING
+DRV
+DRIVER
+EXT
+EXPATRIATE
+SEC
+SECURITY
+IT1
+IT
+PCH
+PURCHASING
+EXM
+EXIM
+SCL
+STOCK CONTROL
+MKT1
+MARKETING
+SLS
+SALES
+CRP1
+COORPORATE
+
+Position
+Position adalah unit operasional di bawah department dan menjadi basis assignment employee, working schedule, approval manager, actual hour report dan payroll cost analysis. 
+Code
+Name
+Job Level
+ACC
+ACCESSORIES
+
+
+
+Job Level
+Job level digunakan sebagai kriteria compensation, salary visibility, overtime eligibility, approval hierarchy, benefit eligibility dan reporting.
+Job Level Code
+Job Level / Class
+1A
+Operator
+1A
+Reception
+1B
+Coordinator 
+1B
+Administrator 
+1C
+Admin Junior Staff
+2A
+Sub Leader
+2A
+Driver
+2A
+Security
+2B
+Leader
+2C
+Staff
+2D
+Foreman
+2D
+Chief
+2E
+Supervisor
+2F
+Assistant Manager
+3A
+Manager
+3B
+Deputy General Manager
+3C
+General Manager
+4A
+Director
+4B
+President Director
+4C
+Vice President Director
+
+Jadwal Shift
+Sumber jadwal memuat variasi 3 shift, long shift, non shift, driver/BUS, security pria/wanita, hari Jumat, OFF dan Ramadhan. Target konfigurasi menggunakan work time profile, work calendar, shift code, start/end time, break, day type dan schedule pattern.
+Shift Code
+Shift Name
+Start Time
+End Time
+Number of Break
+Day Type
+3S1
+3 Shift 1
+07:00
+15:00
+2
+WORK
+3S1OFF
+3 Shift 1 Off
+07:00
+15:00
+1
+OFF
+3S1S
+3 Shift 1 Saturday
+07:00
+15:00
+2
+WORK
+3S2
+3 Shift 2
+15:00
+23:00
+2
+WORK
+3S2OFF
+3 Shift 2 Off
+15:00
+23:00
+2
+OFF
+3S2S
+3 Shift 2 Saturday
+15:00
+23:00
+2
+WORK
+3S3
+3 Shift 3
+23:00
+07:00
+2
+WORK
+3S3OFF
+3 Shift 3 Off
+23:00
+07:00
+2
+OFF
+3S3S
+3 Shift 3 Saturday
+23:00
+07:00
+2
+WORK
+LS1
+Long Shift 1
+07:00
+19:00
+2
+WORK
+LS1F
+Long Shift 1 Friday
+07:00
+19:00
+2
+WORK
+LS1FR
+Long Shift 1 Friday Ramadhan
+07:00
+18:00
+2
+WORK
+LS1OFF
+Long Shift 1 OFF
+07:00
+19:00
+1
+OFF
+LS1OFFR
+Long Shift 1 OFF Ramadhan
+07:00
+18:00
+2
+OFF
+LS1R
+Long Shift 1 Ramadhan
+07:00
+18:00
+2
+WORK
+LS2
+Long Shift 2
+19:00
+07:00
+2
+WORK
+LS2OFF
+Long Shift 2 OFF
+19:00
+07:00
+2
+OFF
+LS2OFFR
+Long Shift 2 OFF Ramadhan
+19:00
+07:00
+2
+OFF
+LS2R
+Long Shift 2 Ramadhan
+19:00
+07:00
+2
+WORK
+NS
+Non Shift
+07:30
+16:30
+3
+WORK
+NS1D
+Non Shift 1 Driver
+07:00
+16:00
+3
+WORK
+NS1DF
+Non Shift 1 Driver Friday
+07:00
+16:30
+3
+WORK
+NSD
+Non Shift Driver
+07:30
+16:30
+3
+WORK
+NSDF
+Non Shift Driver Friday
+07:30
+17:00
+3
+WORK
+NSDFR
+Non Shift Driver Friday Ramadhan
+07:00
+16:00
+3
+WORK
+NSDOFF
+Non Shift Driver OFF
+07:30
+16:30
+3
+OFF
+NSDR
+Non Shift Driver Ramadhan
+07:00
+15:30
+3
+WORK
+NSF
+Non Shift Friday
+07:30
+17:00
+3
+WORK
+NSFR
+Non Shift Friday Ramadhan
+07:30
+16:30
+2
+WORK
+NSOFF
+Non Shift OFF
+07:30
+16:30
+3
+OFF
+NSOFFD
+Non Shift OFF Driver
+05:00
+16:30
+3
+OFF
+NSOFFR
+Non Shift OFF Ramadhan
+07:30
+16:00
+2
+OFF
+NSR
+Non Shift Ramadhan
+07:30
+16:00
+2
+WORK
+S!NSFOFF
+Shift 1 Non Shift Friday OFF
+07:00
+16:30
+3
+OFF
+S1
+Shift 1
+06:30
+15:30
+3
+WORK
+S1BUS
+Shift 1 BUS 
+06:30
+15:30
+3
+WORK
+S1D
+Shift 1 Driver
+06:30
+15:30
+3
+WORK
+S1DF
+Shift 1 Driver Friday
+06:30
+16:00
+3
+WORK
+S1DOFF
+Shift 1 Driver OFF
+06:30
+15:30
+3
+OFF
+S1DR
+Shift 1 Driver Ramadhan
+06:30
+15:00
+3
+WORK
+S1F
+Shift 1 Friday
+06:30
+16:00
+3
+WORK
+S1FBUS
+Shift 1 Friday BUS
+06:30
+16:00
+3
+WORK
+S1FOFF
+Shift 1 Friday OFF
+06:30
+16:00
+3
+OFF
+S1FOFFR
+Shift 1 Friday OFF Ramadhan
+07:30
+15:30
+2
+OFF
+S1FR
+Shift 1 Friday Ramadhan
+06:30
+15:30
+2
+WORK
+S1NS
+Shift 1 Non Shift
+07:00
+16:00
+3
+WORK
+S1NSF
+Shift 1 Non Shift Friday
+07:00
+16:30
+3
+WORK
+S1NSFR
+Shift 1 Non Shift Friday Ramadhan
+07:00
+16:00
+3
+WORK
+S1NSOFF
+Shift 1 Non Shift Off
+07:00
+16:00
+2
+OFF
+S1NSR
+Shift 1 Non Shift Ramadhan
+07:00
+15:30
+3
+WORK
+S1OFF
+Shift 1 OFF
+06:30
+15:30
+1
+OFF
+S1OFFR
+Shift 1 OFF Ramadhan
+07:30
+15:00
+2
+OFF
+S1R
+Shift 1 Ramadhan
+06:30
+15:00
+2
+WORK
+S2
+Shift 2
+15:30
+00:30
+3
+WORK
+S2FR
+Shift 2 Friday Ramadhan
+15:00
+00:00
+2
+WORK
+S2N
+Shift 2 New
+16:00
+01:00
+3
+WORK
+S2NOFF
+Shift 2 New OFF
+16:00
+01:00
+2
+OFF
+S2OFF
+Shift 2 OFF
+15:30
+00:30
+2
+OFF
+S2OFFR
+Shift 2 Off Ramadhan
+15:30
+00:30
+2
+OFF
+S2R
+Shift 2 Ramadhan
+15:30
+00:30
+2
+WORK
+S3
+Shift 3
+00:30
+09:30
+2
+WORK
+S3OFF
+Shift 3 OFF
+00:30
+09:30
+2
+OFF
+SECP1
+Security (Pria) S1
+08:00
+20:00
+1
+WORK
+SECP1NO
+Security ( Pria ) S1 Non OT
+08:00
+17:00
+1
+WORK
+SECP1OFF
+Security (Pria) S1 OFF
+08:00
+20:00
+2
+OFF
+SECP2
+Security (Pria) S2
+20:00
+08:00
+2
+WORK
+SECP2NO
+Security ( Pria ) S2 Non OT
+20:00
+05:00
+2
+WORK
+SECP2OFF
+Security (Pria) S2 OFF
+20:00
+08:00
+3
+OFF
+SECPP
+Security Shift 1 (Pengganti)
+08:00
+20:00
+2
+OFF
+SECPP2
+Security Shift 2 (Pengganti)
+20:00
+08:00
+2
+OFF
+SECW1
+Security (Wanita) S1
+05:30
+16:30
+1
+WORK
+SECW1F
+Security (Wanita) S1 Friday
+05:30
+15:30
+1
+WORK
+SECW1FR
+Security Wanita (Friday) Ramadhan
+05:30
+16:00
+1
+WORK
+SECW1OFF
+Security (Wanita) S1 OFF
+05:30
+16:30
+1
+OFF
+SECW1R
+Security Wanita Ramadhan
+05:30
+16:00
+1
+WORK
+SECW1ROFF
+Security Wanita Ramadhan Off
+07:30
+15:00
+1
+OFF
+SECWP
+Security Wanita Shift 1 (Pengganti)
+05:30
+16:30
+1
+WORK
+SIDOFFR
+Shift 1 Driver Off Ramadhan
+06:30
+15:00
+3
+OFF
+
+Tipe Cuti
+Leave Type
+Policy Draft
+Configuration
+Annual Leave
+12 working days per year; supports full day and half day.
+Untuk karyawan yang mendapat hak cuti dipertengahan tahun, saldo cutinya akan diprorata dan dihitungkan cuti yang terpotong atas ketentuan pemerintah (hari libur yang memotong cuti).
+Balance / accrual
+Bereavement - spouse/child
+3 working days.
+Special leave
+Bereavement - parent/in-law/sibling
+2 working days.
+Special leave
+Bereavement - grandparent/household
+1 working day.
+Special leave
+Employee Marriage
+3 working days.
+Special leave
+Child Marriage / Circumcision / Baptism
+2 working days.
+Special leave
+Wife Childbirth / Miscarriage
+2 working days.
+Special leave
+Spouse/Child Hospitalized
+1 working day per year/event.
+Special leave
+Sibling Marriage / State Examination
+1 working day.
+Special leave
+Hajj Leave
+As approved according to policy.
+Special leave
+Maternity Leave
+3 months: 1.5 months before and 1.5 months after delivery.
+Medical attachment
+Miscarriage Leave
+Maximum 2 months based on medical recommendation.
+Medical attachment
+Additional Tenure Leave
+Granted at 10 and 20 years, usable in year 11 and 21, expires after one year.
+Custom tenure rule
+Cuti Ganti Hari
+
+Special leave
+Cuti Setengah Hari / Half Day
+
+Special leave
+
+
+Hitungan Lembur
+Overtime dihitung dari jam aktual yang telah disetujui dan direkonsiliasi dengan fingerprint serta schedule. Formula dasar pada payroll rules menggunakan 1/173 x upah x jam lembur x multiplier. Eligibility dan benefit berbeda berdasarkan job level.
+Rule
+Draft Formula / Treatment
+Notes
+Regular Day - First Hour
+1/173 x eligible wage x hours x 1.5
+Eligible level only.
+Holiday / Subsequent Rule
+1/173 x eligible wage x hours x 2.0
+Final tiering to be confirmed.
+Operator through Leader / applicable Staff
+Paid on workday and holiday.
+Confirm exact inclusion of Staff/Administrator.
+Foreman / Chief
+Not paid on workday; paid on holiday.
+Per source rule.
+Supervisor / Assistant Manager
+No cash OT; holiday/transport benefit may apply.
+Policy discrepancy requires confirmation.
+Manager and above
+Not eligible for overtime payment.
+Report actual hours only if required.
+Late Deduction
+Basic Salary / 30 / 8 x late minutes; 2-minute tolerance.
+Custom calculation.
+Absence Deduction
+Basic Salary / 30 x unpaid absence days.
+Custom calculation.
+
+
+Report dan Printout
+Report
+Laporan Absensi Karyawan
+Laporan absensi karyawan adalah laporan rekapitulasi data jadwal kerja, kehadiran, dan lembur dalam periode bulanan atau tahunan.
+
+
+
+
+
+
+Rekap Absensi Karyawan
+Rekap absensi karyawan adalah laporan rekapitulasi data jadwal kerja,kehadiran, cuti, dan lembur dalam periode bulanan atau tahunan.
+
+
+
+
+
+
+
+
+
+
+
+
+Laporan Korporat
+Aktual Hours
+Laporan jam kerja aktual per section: MP, tidak hadir, late, jam kerja, lembur, index OT.
+
+Rekap Allowance
+Laporan rekapitulasi tunjangan section per periode gaji.
+
+
+Rekap Deduction
+Laporan rekapitulasi potongansection per periode gaji.
+
+Rekap Allowance
+Laporan rekapitulasi tunjangan karyawan per periode gaji.
+
+Rekap Deduction
+Laporan rekapitulasi potongan karyawan per periode gaji.
+
+Rekap Uang Pisah dan Kompensasi
+Laporan rekapitulasi pesangin karyawan per periode.
+
+
+Rekap Gaji berdasarkan Ketegori
+Rekap gaji bulanan (periodik) adalah laporan rekapitulasi gaji setiap karyawan yang dikelompokan berdasarkan kategori komponen gaji.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+eSPT / Form 1721-I
+Laporan form 1721-I dalam bentuk excel.
+
+
+XML Upload Coretax
+Bukti Pemotongan Bulanan Pegawai Tetap– BPMP
+Output report berupa XML file dengan format berikut.
+<MmPayrollBulk>
+<TIN>0010847341057000</TIN>
+<ListOfMmPayroll>
+<MmPayroll>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport>0</CounterpartPassport>
+<CounterpartTin>3216064805780029</CounterpartTin>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<Position>Operator Standard Sewing Group</Position>
+<TaxCertificate>DTP</TaxCertificate>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<Gross>9164393</Gross>
+<Rate>1.75</Rate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</MmPayroll>
+<MmPayroll>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport>0</CounterpartPassport>
+<CounterpartTin>3216055305770010</CounterpartTin>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<Position>Koordinator Standard Sewing Group</Position>
+<TaxCertificate>DTP</TaxCertificate>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<Gross>9635197</Gross>
+<Rate>1.75</Rate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</MmPayroll>
+<MmPayroll>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport>0</CounterpartPassport>
+<CounterpartTin>3216180509750001</CounterpartTin>
+<StatusTaxExemption>TK/1</StatusTaxExemption>
+<Position>Operator Cleaning</Position>
+<TaxCertificate>DTP</TaxCertificate>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<Gross>9062637</Gross>
+<Rate>1.75</Rate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</MmPayroll>
+<MmPayroll>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport>0</CounterpartPassport>
+<CounterpartTin>3216085508770020</CounterpartTin>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<Position>Operator Cap Group</Position>
+<TaxCertificate>DTP</TaxCertificate>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<Gross>9210320</Gross>
+<Rate>1.75</Rate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</MmPayroll>
+<MmPayroll>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport>0</CounterpartPassport>
+<CounterpartTin>3216052112740001</CounterpartTin>
+<StatusTaxExemption>K/2</StatusTaxExemption>
+<Position>Koordinator Warehouse</Position>
+<TaxCertificate>DTP</TaxCertificate>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<Gross>14176956</Gross>
+<Rate>5</Rate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</MmPayroll>
+<MmPayroll>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport>0</CounterpartPassport>
+<CounterpartTin>3216080905750005</CounterpartTin>
+<StatusTaxExemption>K/2</StatusTaxExemption>
+<Position>Security Pria</Position>
+<TaxCertificate>DTP</TaxCertificate>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<Gross>14695113</Gross>
+<Rate>5</Rate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</MmPayroll>
+<MmPayroll>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport>0</CounterpartPassport>
+<CounterpartTin>3175061612750006</CounterpartTin>
+<StatusTaxExemption>K/2</StatusTaxExemption>
+<Position>Koordinator Haieki Tube</Position>
+<TaxCertificate>DTP</TaxCertificate>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<Gross>10932569</Gross>
+<Rate>2</Rate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</MmPayroll>
+<MmPayroll>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport>0</CounterpartPassport>
+<CounterpartTin>3216065112710014</CounterpartTin>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<Position>Koordinator Standard Sewing Group</Position>
+<TaxCertificate>DTP</TaxCertificate>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<Gross>9592636</Gross>
+<Rate>1.75</Rate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</MmPayroll>
+<MmPayroll>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport>0</CounterpartPassport>
+<CounterpartTin>3216076012750006</CounterpartTin>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<Position>Operator Gown Sewing 1 Group</Position>
+<TaxCertificate>DTP</TaxCertificate>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<Gross>9270757</Gross>
+<Rate>1.75</Rate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</MmPayroll>
+<MmPayroll>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport>0</CounterpartPassport>
+<CounterpartTin>3175044808730009</CounterpartTin>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<Position>Administrator Standard Sewing Group</Position>
+<TaxCertificate>DTP</TaxCertificate>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<Gross>9732987</Gross>
+<Rate>2</Rate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</MmPayroll>
+</ListOfMmPayroll>
+</MmPayrollBulk>
+Bukti Pemotongan Bulanan Pegawai Tetap – BPA1
+Output report berupa XML file dengan format berikut.
+<A1Bulk>
+<TIN>0010847341057000</TIN>
+<ListOfA1>
+<A1>
+<WorkForSecondEmployer>No</WorkForSecondEmployer>
+<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport xsi:nil="true"/>
+<CounterpartTin>3216083007710002</CounterpartTin>
+<TaxExemptOpt>K/3</TaxExemptOpt>
+<StatusOfWithholding>PartialYear</StatusOfWithholding>
+<CounterpartPosition>Koordinator Part / Drape Group</CounterpartPosition>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<NumberOfMonths>0</NumberOfMonths>
+<SalaryPensionJhtTht>49732396</SalaryPensionJhtTht>
+<GrossUpOpt>Yes</GrossUpOpt>
+<IncomeTaxBenefit>0</IncomeTaxBenefit>
+<OtherBenefit>8447309</OtherBenefit>
+<Honorarium>0</Honorarium>
+<InsurancePaidByEmployer>4989223</InsurancePaidByEmployer>
+<Natura>0</Natura>
+<TantiemBonusThr>8005217</TantiemBonusThr>
+<PensionContributionJhtThtFee>1681092</PensionContributionJhtThtFee>
+<Zakat>0</Zakat>
+<PrevWhTaxSlip xsi:nil="true"/>
+<TaxCertificate>N/A</TaxCertificate>
+<Article21IncomeTax>1829413</Article21IncomeTax>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</A1>
+<A1>
+<WorkForSecondEmployer>No</WorkForSecondEmployer>
+<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport xsi:nil="true"/>
+<CounterpartTin>3275025405030010</CounterpartTin>
+<TaxExemptOpt>TK/0</TaxExemptOpt>
+<StatusOfWithholding>PartialYear</StatusOfWithholding>
+<CounterpartPosition>Operator Plastic Molding</CounterpartPosition>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<NumberOfMonths>0</NumberOfMonths>
+<SalaryPensionJhtTht>37382102</SalaryPensionJhtTht>
+<GrossUpOpt>Yes</GrossUpOpt>
+<IncomeTaxBenefit>0</IncomeTaxBenefit>
+<OtherBenefit>1973746</OtherBenefit>
+<Honorarium>0</Honorarium>
+<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+<Natura>0</Natura>
+<TantiemBonusThr>6161885</TantiemBonusThr>
+<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+<Zakat>0</Zakat>
+<PrevWhTaxSlip xsi:nil="true"/>
+<TaxCertificate>N/A</TaxCertificate>
+<Article21IncomeTax>1110819</Article21IncomeTax>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</A1>
+<A1>
+<WorkForSecondEmployer>No</WorkForSecondEmployer>
+<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport xsi:nil="true"/>
+<CounterpartTin>3216226807980003</CounterpartTin>
+<TaxExemptOpt>TK/0</TaxExemptOpt>
+<StatusOfWithholding>PartialYear</StatusOfWithholding>
+<CounterpartPosition>Operator Seftal Group</CounterpartPosition>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<NumberOfMonths>0</NumberOfMonths>
+<SalaryPensionJhtTht>37587498</SalaryPensionJhtTht>
+<GrossUpOpt>Yes</GrossUpOpt>
+<IncomeTaxBenefit>0</IncomeTaxBenefit>
+<OtherBenefit>4419991</OtherBenefit>
+<Honorarium>0</Honorarium>
+<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+<Natura>0</Natura>
+<TantiemBonusThr>6161885</TantiemBonusThr>
+<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+<Zakat>0</Zakat>
+<PrevWhTaxSlip xsi:nil="true"/>
+<TaxCertificate>N/A</TaxCertificate>
+<Article21IncomeTax>1349793</Article21IncomeTax>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</A1>
+<A1>
+<WorkForSecondEmployer>No</WorkForSecondEmployer>
+<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport xsi:nil="true"/>
+<CounterpartTin>3216056201010001</CounterpartTin>
+<TaxExemptOpt>TK/0</TaxExemptOpt>
+<StatusOfWithholding>PartialYear</StatusOfWithholding>
+<CounterpartPosition>Operator Nyucardio Group</CounterpartPosition>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<NumberOfMonths>0</NumberOfMonths>
+<SalaryPensionJhtTht>37587498</SalaryPensionJhtTht>
+<GrossUpOpt>Yes</GrossUpOpt>
+<IncomeTaxBenefit>0</IncomeTaxBenefit>
+<OtherBenefit>2358107</OtherBenefit>
+<Honorarium>0</Honorarium>
+<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+<Natura>0</Natura>
+<TantiemBonusThr>6161885</TantiemBonusThr>
+<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+<Zakat>0</Zakat>
+<PrevWhTaxSlip xsi:nil="true"/>
+<TaxCertificate>N/A</TaxCertificate>
+<Article21IncomeTax>1230568</Article21IncomeTax>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</A1>
+<A1>
+<WorkForSecondEmployer>No</WorkForSecondEmployer>
+<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport xsi:nil="true"/>
+<CounterpartTin>3207016709970003</CounterpartTin>
+<TaxExemptOpt>TK/0</TaxExemptOpt>
+<StatusOfWithholding>PartialYear</StatusOfWithholding>
+<CounterpartPosition>Operator Gown Sewing 3 Group</CounterpartPosition>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<NumberOfMonths>0</NumberOfMonths>
+<SalaryPensionJhtTht>39025271</SalaryPensionJhtTht>
+<GrossUpOpt>Yes</GrossUpOpt>
+<IncomeTaxBenefit>0</IncomeTaxBenefit>
+<OtherBenefit>1882076</OtherBenefit>
+<Honorarium>0</Honorarium>
+<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+<Natura>0</Natura>
+<TantiemBonusThr>6161885</TantiemBonusThr>
+<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+<Zakat>0</Zakat>
+<PrevWhTaxSlip xsi:nil="true"/>
+<TaxCertificate>N/A</TaxCertificate>
+<Article21IncomeTax>1076085</Article21IncomeTax>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</A1>
+<A1>
+<WorkForSecondEmployer>No</WorkForSecondEmployer>
+<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport xsi:nil="true"/>
+<CounterpartTin>3328124203010003</CounterpartTin>
+<TaxExemptOpt>TK/0</TaxExemptOpt>
+<StatusOfWithholding>PartialYear</StatusOfWithholding>
+<CounterpartPosition>Operator Drape Group</CounterpartPosition>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<NumberOfMonths>0</NumberOfMonths>
+<SalaryPensionJhtTht>40257648</SalaryPensionJhtTht>
+<GrossUpOpt>Yes</GrossUpOpt>
+<IncomeTaxBenefit>0</IncomeTaxBenefit>
+<OtherBenefit>2857471</OtherBenefit>
+<Honorarium>0</Honorarium>
+<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+<Natura>0</Natura>
+<TantiemBonusThr>6211885</TantiemBonusThr>
+<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+<Zakat>0</Zakat>
+<PrevWhTaxSlip xsi:nil="true"/>
+<TaxCertificate>N/A</TaxCertificate>
+<Article21IncomeTax>1089468</Article21IncomeTax>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</A1>
+<A1>
+<WorkForSecondEmployer>No</WorkForSecondEmployer>
+<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport xsi:nil="true"/>
+<CounterpartTin>3275025012010018</CounterpartTin>
+<TaxExemptOpt>TK/0</TaxExemptOpt>
+<StatusOfWithholding>PartialYear</StatusOfWithholding>
+<CounterpartPosition>Operator Non Std Drape Group</CounterpartPosition>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<NumberOfMonths>0</NumberOfMonths>
+<SalaryPensionJhtTht>41695422</SalaryPensionJhtTht>
+<GrossUpOpt>Yes</GrossUpOpt>
+<IncomeTaxBenefit>0</IncomeTaxBenefit>
+<OtherBenefit>4929306</OtherBenefit>
+<Honorarium>0</Honorarium>
+<InsurancePaidByEmployer>1950855</InsurancePaidByEmployer>
+<Natura>0</Natura>
+<TantiemBonusThr>6161885</TantiemBonusThr>
+<PensionContributionJhtThtFee>1293999</PensionContributionJhtThtFee>
+<Zakat>0</Zakat>
+<PrevWhTaxSlip xsi:nil="true"/>
+<TaxCertificate>N/A</TaxCertificate>
+<Article21IncomeTax>1319574</Article21IncomeTax>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</A1>
+<A1>
+<WorkForSecondEmployer>No</WorkForSecondEmployer>
+<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport xsi:nil="true"/>
+<CounterpartTin>3215252405030002</CounterpartTin>
+<TaxExemptOpt>TK/0</TaxExemptOpt>
+<StatusOfWithholding>PartialYear</StatusOfWithholding>
+<CounterpartPosition>Operator QC Group</CounterpartPosition>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<NumberOfMonths>0</NumberOfMonths>
+<SalaryPensionJhtTht>38137031</SalaryPensionJhtTht>
+<GrossUpOpt>Yes</GrossUpOpt>
+<IncomeTaxBenefit>0</IncomeTaxBenefit>
+<OtherBenefit>2875924</OtherBenefit>
+<Honorarium>0</Honorarium>
+<InsurancePaidByEmployer>1896079</InsurancePaidByEmployer>
+<Natura>0</Natura>
+<TantiemBonusThr>5988885</TantiemBonusThr>
+<PensionContributionJhtThtFee>1257669</PensionContributionJhtThtFee>
+<Zakat>0</Zakat>
+<PrevWhTaxSlip xsi:nil="true"/>
+<TaxCertificate>N/A</TaxCertificate>
+<Article21IncomeTax>1016920</Article21IncomeTax>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</A1>
+<A1>
+<WorkForSecondEmployer>No</WorkForSecondEmployer>
+<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport xsi:nil="true"/>
+<CounterpartTin>3376046203030001</CounterpartTin>
+<TaxExemptOpt>TK/0</TaxExemptOpt>
+<StatusOfWithholding>PartialYear</StatusOfWithholding>
+<CounterpartPosition>Operator Accessory Group</CounterpartPosition>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<NumberOfMonths>0</NumberOfMonths>
+<SalaryPensionJhtTht>40953307</SalaryPensionJhtTht>
+<GrossUpOpt>Yes</GrossUpOpt>
+<IncomeTaxBenefit>0</IncomeTaxBenefit>
+<OtherBenefit>4289369</OtherBenefit>
+<Honorarium>0</Honorarium>
+<InsurancePaidByEmployer>1888164</InsurancePaidByEmployer>
+<Natura>0</Natura>
+<TantiemBonusThr>5686115</TantiemBonusThr>
+<PensionContributionJhtThtFee>1252419</PensionContributionJhtThtFee>
+<Zakat>0</Zakat>
+<PrevWhTaxSlip xsi:nil="true"/>
+<TaxCertificate>N/A</TaxCertificate>
+<Article21IncomeTax>1056395</Article21IncomeTax>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</A1>
+<A1>
+<WorkForSecondEmployer>No</WorkForSecondEmployer>
+<TaxPeriodMonthStart>1</TaxPeriodMonthStart>
+<TaxPeriodMonthEnd>7</TaxPeriodMonthEnd>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartOpt>Resident</CounterpartOpt>
+<CounterpartPassport xsi:nil="true"/>
+<CounterpartTin>3216086807050001</CounterpartTin>
+<TaxExemptOpt>TK/0</TaxExemptOpt>
+<StatusOfWithholding>PartialYear</StatusOfWithholding>
+<CounterpartPosition>Operator Non Std Over All Drape Group</CounterpartPosition>
+<TaxObjectCode>21-100-01</TaxObjectCode>
+<NumberOfMonths>0</NumberOfMonths>
+<SalaryPensionJhtTht>35410347</SalaryPensionJhtTht>
+<GrossUpOpt>Yes</GrossUpOpt>
+<IncomeTaxBenefit>0</IncomeTaxBenefit>
+<OtherBenefit>5114272</OtherBenefit>
+<Honorarium>0</Honorarium>
+<InsurancePaidByEmployer>1888164</InsurancePaidByEmployer>
+<Natura>0</Natura>
+<TantiemBonusThr>1013043</TantiemBonusThr>
+<PensionContributionJhtThtFee>1252419</PensionContributionJhtThtFee>
+<Zakat>0</Zakat>
+<PrevWhTaxSlip xsi:nil="true"/>
+<TaxCertificate>N/A</TaxCertificate>
+<Article21IncomeTax>456520</Article21IncomeTax>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</A1>
+</ListOfA1>
+</A1Bulk>
+
+Bukti Pemotongan Bulanan Pegawai Tetap – BP21
+Output report berupa XML file dengan format berikut.
+<Bp21Bulk>
+<TIN>0010847341057000</TIN>
+<ListOfBp21>
+<Bp21>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartTin>3216083007710002</CounterpartTin>
+<IDPlaceOfBusinessActivityOfIncomeRecipient>3216083007710002000000</IDPlaceOfBusinessActivityOfIncomeRecipient>
+<StatusTaxExemption>K/3</StatusTaxExemption>
+<TaxCertificate>N/A</TaxCertificate>
+<TaxObjectCode>21-401-01</TaxObjectCode>
+<Gross>206134348</Gross>
+<Deemed>100</Deemed>
+<Rate>15</Rate>
+<Document>Other</Document>
+<DocumentNumber>0</DocumentNumber>
+<DocumentDate>2026-07-31</DocumentDate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</Bp21>
+<Bp21>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartTin>3216104611030001</CounterpartTin>
+<IDPlaceOfBusinessActivityOfIncomeRecipient>3216104611030001000000</IDPlaceOfBusinessActivityOfIncomeRecipient>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<TaxCertificate>N/A</TaxCertificate>
+<TaxObjectCode>21-401-01</TaxObjectCode>
+<Gross>3080942</Gross>
+<Deemed>100</Deemed>
+<Rate>0</Rate>
+<Document>Other</Document>
+<DocumentNumber>0</DocumentNumber>
+<DocumentDate>2026-07-31</DocumentDate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</Bp21>
+<Bp21>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartTin>3216066311010015</CounterpartTin>
+<IDPlaceOfBusinessActivityOfIncomeRecipient>3216066311010015000000</IDPlaceOfBusinessActivityOfIncomeRecipient>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<TaxCertificate>N/A</TaxCertificate>
+<TaxObjectCode>21-401-01</TaxObjectCode>
+<Gross>3080942</Gross>
+<Deemed>100</Deemed>
+<Rate>0</Rate>
+<Document>Other</Document>
+<DocumentNumber>0</DocumentNumber>
+<DocumentDate>2026-07-31</DocumentDate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</Bp21>
+<Bp21>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartTin>3216105906040001</CounterpartTin>
+<IDPlaceOfBusinessActivityOfIncomeRecipient>3216105906040001000000</IDPlaceOfBusinessActivityOfIncomeRecipient>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<TaxCertificate>N/A</TaxCertificate>
+<TaxObjectCode>21-401-01</TaxObjectCode>
+<Gross>3080942</Gross>
+<Deemed>100</Deemed>
+<Rate>0</Rate>
+<Document>Other</Document>
+<DocumentNumber>0</DocumentNumber>
+<DocumentDate>2026-07-31</DocumentDate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</Bp21>
+<Bp21>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartTin>3203250511000002</CounterpartTin>
+<IDPlaceOfBusinessActivityOfIncomeRecipient>3203250511000002000000</IDPlaceOfBusinessActivityOfIncomeRecipient>
+<StatusTaxExemption>K/0</StatusTaxExemption>
+<TaxCertificate>N/A</TaxCertificate>
+<TaxObjectCode>21-401-01</TaxObjectCode>
+<Gross>3110942</Gross>
+<Deemed>100</Deemed>
+<Rate>0</Rate>
+<Document>Other</Document>
+<DocumentNumber>0</DocumentNumber>
+<DocumentDate>2026-07-31</DocumentDate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</Bp21>
+<Bp21>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartTin>3216054803020004</CounterpartTin>
+<IDPlaceOfBusinessActivityOfIncomeRecipient>3216054803020004000000</IDPlaceOfBusinessActivityOfIncomeRecipient>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<TaxCertificate>N/A</TaxCertificate>
+<TaxObjectCode>21-401-01</TaxObjectCode>
+<Gross>3080942</Gross>
+<Deemed>100</Deemed>
+<Rate>0</Rate>
+<Document>Other</Document>
+<DocumentNumber>0</DocumentNumber>
+<DocumentDate>2026-07-31</DocumentDate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</Bp21>
+<Bp21>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartTin>3216081003030005</CounterpartTin>
+<IDPlaceOfBusinessActivityOfIncomeRecipient>3216081003030005000000</IDPlaceOfBusinessActivityOfIncomeRecipient>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<TaxCertificate>N/A</TaxCertificate>
+<TaxObjectCode>21-401-01</TaxObjectCode>
+<Gross>3080942</Gross>
+<Deemed>100</Deemed>
+<Rate>0</Rate>
+<Document>Other</Document>
+<DocumentNumber>0</DocumentNumber>
+<DocumentDate>2026-07-31</DocumentDate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</Bp21>
+<Bp21>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartTin>3201076702021001</CounterpartTin>
+<IDPlaceOfBusinessActivityOfIncomeRecipient>3201076702021001000000</IDPlaceOfBusinessActivityOfIncomeRecipient>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<TaxCertificate>N/A</TaxCertificate>
+<TaxObjectCode>21-401-01</TaxObjectCode>
+<Gross>3080942</Gross>
+<Deemed>100</Deemed>
+<Rate>0</Rate>
+<Document>Other</Document>
+<DocumentNumber>0</DocumentNumber>
+<DocumentDate>2026-07-31</DocumentDate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</Bp21>
+<Bp21>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartTin>3216104205040002</CounterpartTin>
+<IDPlaceOfBusinessActivityOfIncomeRecipient>3216104205040002000000</IDPlaceOfBusinessActivityOfIncomeRecipient>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<TaxCertificate>N/A</TaxCertificate>
+<TaxObjectCode>21-401-01</TaxObjectCode>
+<Gross>3080942</Gross>
+<Deemed>100</Deemed>
+<Rate>0</Rate>
+<Document>Other</Document>
+<DocumentNumber>0</DocumentNumber>
+<DocumentDate>2026-07-31</DocumentDate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</Bp21>
+<Bp21>
+<TaxPeriodMonth>7</TaxPeriodMonth>
+<TaxPeriodYear>2026</TaxPeriodYear>
+<CounterpartTin>3216125807030002</CounterpartTin>
+<IDPlaceOfBusinessActivityOfIncomeRecipient>3216125807030002000000</IDPlaceOfBusinessActivityOfIncomeRecipient>
+<StatusTaxExemption>TK/0</StatusTaxExemption>
+<TaxCertificate>N/A</TaxCertificate>
+<TaxObjectCode>21-401-01</TaxObjectCode>
+<Gross>3080942</Gross>
+<Deemed>100</Deemed>
+<Rate>0</Rate>
+<Document>Other</Document>
+<DocumentNumber>0</DocumentNumber>
+<DocumentDate>2026-07-31</DocumentDate>
+<IDPlaceOfBusinessActivity>0010847341057000000000</IDPlaceOfBusinessActivity>
+<WithholdingDate>2026-07-31</WithholdingDate>
+</Bp21>
+</ListOfBp21>
+</Bp21Bulk>
+Bank Transfer
+Generate list bank transfer untuk pembayaran gaji via Bank Mandiri.
+
+Report BPJS TK
+MonthlyActiveEmployee_20260630_HOGY-Ketenagakerjaan (SIPP)
+
+ListofEmployeeOut_20260630_HOGY-Ketenagakerjaan (SIPP)
+
+Report PPh 21
+Rekap PPH21
+
+Result Advanced Search(Bulanan)pph21
+
+Result Advanced Search(Tahunan)pph21
+
+
+
+Result Advanced Search(Kompensasi)pph21
+
+Summary and List Bank Transfer
+
+
+
+
+Printout
+Dokumen Paklaring
+
+
+Slip Gaji
+Dokumen cetak slip gaji. Dokumen ini hanya bisa dibuka dan diunduh oleh employee terkait.
+sContoh Slip Gaji
+Notes:
+Tambah info sisa cuti tahunan dibawah kolom absent.
+Dikirim via email, butuh password untuk buka payslip.
+
+Contoh Slip Gaji Potongan Koperasi
+
+Contoh Slip Gaji Ekspatriat
+
+
+
+Contoh Slip Gaji Potongan Serikat (SPMI)
+
+Bukti Potong PPh 21 (A1)
+Mendukung pembuatan bukti potong PPh Pasal 21 tahunan untuk karyawan tetap, baik karyawan lokal maupun expatriate yang berstatus Subjek Pajak Dalam Negeri (SPDN), berupa Form 1721-A1 atau BPA1 sesuai tahun pajak dan sistem pelaporan yang digunakan.
+
+
+Mutasi
+Form mutasi digunakan sebagai informasi perubahan data karyawan sebelum dan sesudah mutasi. Mutasi ini diajukan oleh atasan/departemen manager terkait ke HRGA untuk ditinjau perubahan dan memproses perubahan data karyawan tersebut.
+
+Alur Proses
+Karyawan
+Pendaftaran Karyawan
+
+Activity ID
+Activity Name
+PIC
+Description
+Type
+HG.EMP.01
+Terima dokumen karyawan
+HR Admin
+HR Admin menerima dokumen karyawan yang telah dikonfirmasi dan disetujui sebagai dasar pembuatan data karyawan. Dokumen dapat mencakup identitas, informasi hubungan kerja, data organisasi, data perpajakan, BPJS, dan rekening bank.
+Manual / Interface
+HG.EMP.02
+Input data karyawan
+HR Admin
+HR Admin membuka form Employee dan menginput data karyawan ke Microsoft D365. Data employee mencakup informasi personal dan statutory yang digunakan oleh payroll, seperti identitas, status PTKP, data tanggungan, NPWP/NIK, kepesertaan BPJS, rekening bank, status hubungan kerja, posisi, dan organisasi.
+Catatan:Karyawan yang naik posisi atau berubah status kepegawaiannya tidak dibuatkan karyawan baru tetapi kontrak baru. NPK pada data karyawan akan terupdate dengan NPK berdasarkan kontrak aktifnya. Jika tidak ada perubahan NPK dari kontrak, maka NPK karyawan tetap. Perhitungan gaji dan pajak karyawan tetap akan berdasarkan 1 data karyawan.Join date karyawan akan terhitung berdasarkan status kepegawaian (employment type) yang ditandai sebagai awal hitungan masa kerja.
+Standard
+HG.EMP.03
+Verifikasi data karyawan
+HR Admin
+HR Admin memeriksa kebenaran dan kelengkapan data karyawan terhadap dokumen yang telah dikonfirmasi. Pemeriksaan mencakup field wajib, konsistensi tanggal, penempatan organisasi, dan data yang memengaruhi payroll.
+Standard
+HG.EMP.04
+Simpan data karyawan
+HR Admin
+HR Admin menyimpan data karyawan setelah seluruh informasi dinyatakan lengkap dan benar. Data tersebut menjadi sumber utama untuk proses kontrak, jadwal kerja, absensi, cuti, lembur, dan payroll.
+Standard
+
+
+Pembuatan Kontrak Karyawan
+
+
+Activity ID
+Activity Name
+PIC
+Description
+Type
+HG.CON.01
+Terima data kontrak
+HR Admin
+HR Admin menerima data dan ketentuan kontrak yang telah dikonfirmasi, termasuk jenis kontrak, periode kerja, penempatan, serta ketentuan kompensasi.
+Manual / Interface
+HG.CON.02
+Input kontrak karyawan
+HR Admin
+HR Admin membuka form Kontrak Karyawan dan menginput nomor kontrak, jenis kontrak, tanggal mulai dan berakhir, masa percobaan apabila berlaku, posisi, unit kerja, penugasan organisasi, serta komponen penghasilan tetap yang diterima karyawan. Catatan penting: komponen gaji tetap yang menjadi hak karyawan harus dicatat pada kontrak atau assignment payroll terkait.NPK pada data karyawan akan terupdate berdasarkan kontrak terakhir atau terupdatenya.NPK ini terbentuk berdasarkan employement typenya.
+Customization
+HG.CON.03
+Verifikasi kontrak karyawan
+HR Admin
+HR Admin memeriksa periode kontrak, penempatan organisasi, tanggal efektif, lampiran, dan kesesuaian komponen penghasilan tetap dengan ketentuan yang telah disetujui.
+Customization
+HG.CON.04
+Simpan kontrak dan payroll assignment
+HR Admin
+HR Admin menyimpan kontrak serta penugasan komponen payroll karyawan. Data kontrak yang tersimpan menjadi dasar masa berlaku hubungan kerja dan komponen penghasilan tetap pada payroll. Catatan penting: data kontrak disimpan secara effective-dated agar perubahan kontrak tidak menimpa riwayat periode sebelumnya.
+Customization
+HG.CON.05
+Buat dokumen kontrak
+HR Admin
+HR Admin membuat dan mencetak dokumen kontrak berdasarkan data yang telah tersimpan pada form Kontrak Karyawan. Output aktivitas ini adalah Dokumen Kontrak Karyawan.
+Customization
+
+
+Mutasi Karyawan
+
+Activity ID
+Activity Name
+PIC
+Description
+Type
+HG.MUT.01
+Buat pengajuan mutasi
+Requesting Manager
+Requesting Manager membuat pengajuan melalui form Mutasi Karyawan dengan mencatat data asal, data tujuan, jenis perubahan, alasan, dan tanggal efektif. Jenis pengajuan harus membedakan mutasi permanen, promosi/demosi, dan penugasan sementara.
+Customization
+HG.MUT.02
+Submit workflow approval
+Requesting Manager
+Requesting Manager menekan tombol Submit pada form Mutasi Karyawan untuk mengirim pengajuan ke workflow approval. Status berubah dari Draft menjadi Waiting.
+Customization
+HG.MUT.03
+Review dan proses persetujuan
+HR Manager
+HR Manager melakukan review dan memilih tindakan Approve atau Refuse dari form Mutasi Karyawan yang sama. Pengajuan yang disetujui berubah menjadi Approved, sedangkan pengajuan yang ditolak berubah menjadi Refused. Tombol Cancel digunakan untuk membatalkan pengajuan sesuai kewenangan dan kondisi proses.
+Customization
+HG.MUT.04
+Pantau tanggal efektif mutasi
+HR Admin
+HR Admin memantau pengajuan yang telah disetujui. Pengajuan dengan tanggal efektif yang belum tercapai berada pada status Pending. Sistem memberikan penanda atau notifikasi ketika mutasi telah memasuki tanggal efektif dan siap diproses.
+Customization
+HG.MUT.05
+Verifikasi kesiapan data dan klik Process Mutation
+HR Admin
+HR Admin memverifikasi kesiapan data kemudian menekan tombol Process Mutation. Sistem memperbarui data Employee sesuai data tujuan dan tanggal efektif, lalu mengubah status menjadi Done. Catatan penting: penugasan sementara tidak mengubah kontrak atau penempatan utama secara permanen, sedangkan mutasi permanen memperbarui data utama karyawan. Output proses adalah Dokumen Mutasi Karyawan dan laporan mutasi/penugasan.
+Customization
+HG.MUT.06
+Promosi/Demosi?
+HR Admin
+HR Admina mengevaluasi jenis perubahan pada pengajuan mutasi. Apabila jenis mutasi adalah promosi atau demosi, proses dilanjutkan ke pembaruan Kontrak Karyawan karena perubahan tersebut dapat memengaruhi Position, Job Level, salary structure, tunjangan, eligibility lembur, serta ketentuan kerja lainnya. Apabila pengajuan bukan promosi atau demosi, tidak diperlukan pembaruan kontrak dan proses mutasi dinyatakan selesai.
+Manual
+HG.MUT.07
+Buat kontrak baru sesuai hasil promosi/demosi yang sudah dikonfirmasi
+HR Admin
+Jika mutasi adalah Promosi/Demosi, maka HR Admin Kontrak Karyawan baru berdasarkan Position, Job Level, salary component, tanggal efektif, dan ketentuan kerja yang baru. Kontrak lama dinon-aktifkan dan data kontrak tetap disimpan sebagai riwayat dan tidak ditimpa. Kontrak baru atau amendment berlaku mulai tanggal efektif mutasi dan menjadi dasar bagi proses payroll berikutnya. Setelah pembaruan kontrak selesai, proses mutasi dinyatakan selesai.
+Customization
+
+
+Pemberhentian Karyawan
+
+Activity ID
+Activity Name
+PIC
+Description
+Type
+HG.TER.01
+Terima dokumen pemberhentian
+HR Admin
+HR Admin menerima dokumen pemberhentian, pengunduran diri, atau berakhirnya kontrak yang telah disetujui. Catatan: pengajuan dan persetujuan pemberhentian dilakukan di luar Microsoft D365.
+Manual / Interface
+HG.TER.02
+Proses termination pada Employee
+HR Admin
+HR Admin membuka form Employee dan memproses termination dengan mencatat alasan, tanggal kerja terakhir, dan informasi pemberhentian yang diperlukan.
+Standard
+HG.TER.03
+Hitung komponen khusus pemberhentian
+HR Admin
+HR Admin menyusun final settlement menggunakan file Excel atau perhitungan di luar Microsoft D365 untuk komponen khusus pemberhentian yang memerlukan konfirmasi manual. Catatan: final settlement eksternal hanya menjadi sumber komponen khusus dan dokumen kontrol.
+Manual / Interface
+HG.TER.04
+Review final settlement
+HR Manager / Finance
+HR Manager atau Finance melakukan review dan mengonfirmasi final settlement eksternal sebelum digunakan pada proses termination payroll.
+Manual / Interface
+HG.TER.05
+Buka payroll period Termination
+Payroll Officer
+Payroll Officer membuat atau membuka payroll period dengan tipe Termination untuk karyawan yang diberhentikan.
+Customization
+HG.TER.06
+Generate termination payroll
+Payroll Officer
+Payroll Officer menjalankan perhitungan termination payroll. Sistem menghitung otomatis komponen yang telah dikonfigurasikan, termasuk penghasilan tetap dan berulang, prorata, potongan rutin, ASKOM, BPJS, PPh Pasal 21 periode terakhir, konversi USD, serta komponen attendance, cuti, dan lembur yang telah tersedia.
+Customization
+HG.TER.07
+Input komponen khusus final settlement
+Payroll Officer
+Payroll Officer menginput hanya komponen khusus pemberhentian dari final settlement eksternal yang telah disetujui dan belum dihitung otomatis oleh sistem.
+Customization
+HG.TER.08
+Rekonsiliasi draft payslip
+Payroll Officer
+Payroll Officer membandingkan draft termination payslip dari Microsoft D365 dengan final settlement eksternal dan melakukan koreksi apabila terdapat perbedaan.
+Customization
+HG.TER.09
+Finalisasi termination payslip
+Payroll Officer
+Payroll Officer melakukan finalisasi payslip setelah hasil perhitungan dan rekonsiliasi dinyatakan sesuai. Output proses meliputi Final Payslip, Form 1721-A1, Paklaring, dan Laporan Final Settlement.
+Customization
+
+
+Absensi
+Pembuatan Working Schedule
+
+Activity ID
+Activity Name
+PIC
+Description
+Type
+HG.WS.01
+Pilih periode dan cakupan jadwal
+HR Admin
+HR Admin membuka Work Planner, menentukan periode jadwal kerja, kemudian memilih karyawan atau grup karyawan yang akan disusun jadwalnya.
+Standard
+HG.WS.02
+Tampilkan jadwal berdasarkan profile default
+HR Admin
+Sistem menampilkan jadwal dasar berdasarkan work time profile default yang telah ditetapkan kepada karyawan atau grup karyawan. Catatan penting: karyawan dengan pola kerja tetap tidak perlu dibuatkan ulang seluruh jadwalnya secara manual setiap bulan.
+Standard
+HG.WS.03
+Susun atau sesuaikan jadwal kerja
+HR Admin
+HR Admin menetapkan atau menyesuaikan work time profile berdasarkan tanggal untuk mengakomodasi rotasi shift, perubahan operasional, hari kerja khusus, jadwal Ramadan, atau penugasan sementara. Work Time Profile dikonfigurasikan sebagai master shift dan bukan aktivitas bulanan.
+Standard
+HG.WS.04
+Simpan perubahan profile
+HR Admin
+HR Admin menyimpan perubahan profile ke Profile Calendar. Catatan penting: Profile Calendar menyimpan perubahan yang berbeda dari profile default, sedangkan jadwal yang tidak berubah tetap menggunakan profile default karyawan.
+Standard
+HG.WS.05
+Verifikasi working schedule
+HR Admin
+HR Admin memeriksa kelengkapan jadwal kerja seluruh karyawan pada periode terpilih. Working schedule yang terbentuk merupakan gabungan profile default dan perubahan pada Profile Calendar serta menjadi acuan pemrosesan absensi dan lembur. Jadwal dapat ditelusuri berdasarkan karyawan, tanggal, profile yang berlaku, dan sumber perubahan. Output proses adalah Laporan Working Schedule.
+Standard
+
+
+Import Absensi Dari Finger
+
+Activity ID
+Activity Name
+PIC
+Description
+Type
+HG.ATT.01
+Tarik data fingerprint
+Attendance Operator / IT
+Attendance Operator atau IT menarik data fingerprint dari 24 mesin absensi Amano sesuai periode pemrosesan.
+Manual / Interface
+HG.ATT.02
+Upload data ke TA
+Attendance Operator / IT
+Data fingerprint yang telah ditarik diunggah ke aplikasi TA untuk melanjutkan proses pengumpulan data absensi.
+Manual / Interface
+HG.ATT.03
+Salin data melalui server
+Attendance Operator / IT
+Data fingerprint disalin melalui proses Copy Finger pada Server 11 dan Server 10 sesuai mekanisme interface existing Hogy.
+Manual / Interface
+HG.ATT.04
+Verifikasi pembaruan data
+Attendance Operator / IT
+Attendance Operator atau IT memastikan data pada Daikintai dan TA telah diperbarui dan mencakup periode serta mesin yang diproses.
+Manual / Interface
+HG.ATT.05
+Export file output absensi
+Attendance Operator / IT
+File output absensi diekspor dari proses existing untuk digunakan sebagai sumber import ke Microsoft D365. Output aktivitas ini adalah File Output Absensi.
+Manual / Interface
+HG.ATT.06
+Import ke Attendance Staging
+HR Admin
+HR Admin membuka form Attendance Staging dan mengimpor file output absensi ke Microsoft D365.
+Customization
+HG.ATT.07
+Process data attendance
+HR Admin
+HR Admin menjalankan tombol Process pada form Attendance Staging. Sistem memvalidasi nomor karyawan, tanggal, timestamp, sumber mesin, duplikasi, serta working schedule yang berlaku, kemudian membentuk hasil Employee Attendance. Catatan: validasi dijalankan oleh system.Absen masuk lebih dari jadwal masuk seharusnya akan terhitung terlambat dengan toleransi 2 menit.Absen kepulangan lebih awal juga akan terhitung terlambat dengan toleransi yang sama 2 menit.
+Customization
+HG.ATT.08
+Periksa dan rekonsiliasi Employee Attendance
+HR Admin
+HR Admin membuka form Employee Attendance untuk memeriksa hasil jam masuk, jam pulang, keterlambatan, pulang cepat, ketidakhadiran, dan jam kerja aktual serta melakukan rekonsiliasi dengan data cuti, lembur, dan koreksi absensi. Catatan penting: pemeriksaan dan rekonsiliasi dilakukan dalam satu form Employee Attendance. Output proses adalah Laporan Absensi yang digambarkan sebagai dokumen, bukan aktivitas proses.
+Customization
+
+
+Output data finger yang akan diupload
+
+
+
+Cuti
+Pengajuan Cuti
+
+
+
+Activity ID
+Activity Name
+PIC
+Description
+Type
+HG.LEV.01
+Buat pengajuan cuti
+Employee
+Employee membuat Leave Request dengan memilih jenis cuti, tanggal atau durasi, pengajuan 0,5 hari jika diperbolehkan, alasan, dan lampiran pendukung sesuai kebijakan cuti.
+Manual Process
+
+HG.LEV.02
+Submit pengajuan cuti
+Employee
+Employee menekan Submit. Sistem memvalidasi saldo, eligibility, tanggal yang tumpang tindih, working schedule, serta kelengkapan lampiran sebelum pengajuan diteruskan untuk persetujuan.
+Manual Process
+
+HG.LEV.03
+Pengajuan cuti disetujui
+Supervisor/ Manager
+Supervisor atau Manager meninjau pengajuan dan memberikan Approve atau Refuse pada Leave Request. Pengajuan yang ditolak berstatus Refused, sedangkan pengajuan yang disetujui diteruskan kepada HR Admin.
+
+Manual Process
+
+HG.LEV.04
+Revisi?
+Supervisor/ Manager
+
+Jika pengajuan ditolak karena persyaratan cuti tidak lengkap atau ada kondisi tertentu yang harus dipenuhi, maka karyawan dapat memutuskan untuk merevisi pengajuannya atau membuat pengajuan baru.
+
+Manual Process
+
+HG.LEV.05
+Pengecekan saldo cuti
+HR Admin
+Pengecekan saldo cuti akan dilakukan oleh HR admin untuk menentukan apakah Employee masih memiliki saldo cuti tahunan atau tidak.
+Manual Process
+
+HG.LEV.06
+Persetujuan pengajuan cuti
+HR Admin
+HR Admin memverifikasi pengajuan berdasarkan leave policy, jenis cuti, eligibility, saldo, dan dokumen pendukung. (sesuai tipe 
+Manual Process
+
+HG.LEV.07
+Input pengajuan cuti
+HR Admin
+HR admin akan menginput laporan pengajuan cuti di D365 dengan mengkklasifikasi jenis cuti yang akan memotong saldo cuti tahunan. 
+
+Klasifikasi ini mengarah ke Cuti Menyusul yang output akhirnya akan memotong saldo cuti tahunan.
+
+Setelah pengajuan cuti karaywan disetujui, saldo cuti dan status Employee Attendance serta Laporan Cuti karyawan akan diperbarui.
+Customization
+
+
+
+Lembur
+Pengajuan Lembur
+
+
+Activity ID
+Activity Name
+PIC
+Description
+Type
+HG.OT.01
+Buat pengajuan lembur
+Supervisor / Requester
+Supervisor atau Requester membuat Overtime Request untuk satu atau beberapa karyawan dengan mengisi tanggal, rencana waktu mulai dan selesai, pekerjaan atau alasan lembur, unit kerja, serta informasi pendukung lainnya.
+Manual / Interface
+
+HG.OT.02
+Submit pengajuan lembur
+Supervisor / Requester
+Supervisor atau Requester memeriksa daftar karyawan dan rencana lembur lalu menekan Submit agar pengajuan diteruskan melalui workflow approval.
+Manual / Interface
+
+
+HG.OT.03
+Persetujuan Department Head
+Department Head
+Department Head meninjau kebutuhan pekerjaan, karyawan yang diajukan, jadwal, durasi rencana, dan ketersediaan anggaran atau otorisasi unit. Approve meneruskan pengajuan, sedangkan Refuse menghentikan proses.
+Manual / Interface
+
+
+HG.OT.04
+Persetujuan PGA Manager
+PGA Manager
+PGA Manager meninjau kepatuhan terhadap kebijakan lembur, eligibility karyawan, jadwal kerja, dan kelengkapan pengajuan. Approve meneruskan pengajuan kepada Factory Director.
+Manual / Interface
+
+
+HG.OT.05
+Persetujuan Factory Director
+Factory Director
+Factory Director memberikan persetujuan akhir. Pengajuan yang disetujui menghasilkan Surat Pengajuan Lembur sebagai dokumen resmi pelaksanaan lembur, sedangkan pengajuan yang ditolak berstatus Refused.
+Manual / Interface
+
+
+HG.OT.06
+Penginputan SPL ke D365
+HR Admin
+HR Admin akan menginput SPL pada form pencatatan lembur pada D365 sebagai informasi atas lemburnya Employee
+Customization
+
+
+Payroll
+Payroll adalah proses bulanan untuk menggabungkan data karyawan, kontrak, working schedule, absensi, cuti, lembur, komponen penghasilan dan potongan, BPJS, serta PPh Pasal 21 menjadi pay statement karyawan. Proses dilanjutkan dengan persetujuan, penerbitan payslip dan laporan, posting payroll journal, pembuatan file transfer Bank Mandiri, pembayaran gaji, dan penutupan periode.
+
+
+Activity ID
+Activity Name
+PIC
+Description
+Type
+HG.PAY.01
+Buat periode payroll
+Payroll Officer
+Payroll Officer membuat Payroll Period dengan menentukan jenis periode, bulan payroll, rentang tanggal, tanggal cut-off, tanggal pembayaran, perusahaan, dan catatan proses. Jenis periode yang tersedia meliputi Regular, Gantungan/Adjustment, Termination, dan Simulation.
+Customization
+HG.PAY.02
+Generate daftar karyawan payroll
+Payroll Officer
+Payroll Officer menjalankan generate employee pada Payroll Workbench. Daftar karyawan dibentuk berdasarkan status aktif, tanggal efektif hubungan kerja, Payroll Group, Employee Payroll Setup, kontrak, komponen tetap dan berulang, rekening bank, PTKP, BPJS, serta eligibility payroll.
+Customization
+HG.PAY.03
+Finalisasi data sumber payroll
+HR Admin / Time & Attendance
+HR Admin atau Time & Attendance memastikan working schedule, Employee Attendance, cuti, koreksi absensi, pengajuan lembur, klaim lembur, dan jam aktual fingerprint telah selesai diproses. Data yang telah final dibekukan sebagai sumber perhitungan pada periode payroll terkait.
+Manual
+HG.PAY.04
+Input komponen variabel dan adjustment
+Payroll Officer
+Payroll Officer menginput atau mengimpor komponen yang tidak berasal dari komponen tetap maupun data time and attendance. Input dapat mencakup bonus, penghasilan tidak teratur, potongan tambahan, pinjaman, koperasi, koreksi, payroll gantungan, komponen USD, dan komponen khusus termination yang telah disetujui.
+Customization
+HG.PAY.05
+Jalankan perhitungan payroll
+Payroll Officer
+Payroll Officer menjalankan calculates payroll. Payroll engine menghitung komponen tetap dan berulang, prorata, komponen berbasis kehadiran, makan, transportasi, lembur, bonus, adjustment, ASKOM, BPJS, PPh Pasal 21 termasuk gross-up, konversi USD berdasarkan kurs efektif, potongan, dan take-home pay sesuai formula serta parameter yang berlaku.
+Customization
+HG.PAY.06
+Review dan rekonsiliasi payroll
+Payroll Officer
+Payroll Officer memeriksa Payroll Register, hasil per karyawan dan komponen, Payroll Exception Report, nilai negatif atau tidak wajar, perubahan terhadap periode sebelumnya, serta kesesuaian control total. Koreksi dilakukan pada sumber data, setup, atau Payroll Input kemudian calculation dijalankan kembali sebelum diajukan untuk persetujuan.
+Customization
+HG.PAY.07
+Setujui hasil payroll
+HR Manager
+HR Manager melakukan review atas ringkasan payroll, total penghasilan, total potongan, BPJS, PPh Pasal 21, take-home pay, exception, dan hasil rekonsiliasi. Persetujuan dilakukan melalui workflow Payroll Approval pada periode yang sama.
+Customization
+HG.PAY.08
+Finalisasi hasil payroll
+Payroll Officer
+Payroll Officer melakukan finalisasi setelah payroll disetujui. Sistem menyimpan snapshot hasil perhitungan dan mengunci data sumber serta hasil payroll. Perubahan setelah finalisasi harus menggunakan mekanisme reopen yang terkontrol dan memiliki audit trail.
+Customization
+HG.PAY.09
+Generate output payroll
+Payroll Officer
+Payroll Officer menghasilkan payslip, Payroll Register, file transfer Bank Mandiri, laporan PPh Pasal 21, laporan BPJS, dan laporan kontrol payroll. Payslip mengikuti konfigurasi tampilan komponen dan dapat menyembunyikan komponen bernilai nol.
+Customization
+HG.PAY.10
+Proses pembayaran gaji
+Finance / Treasury
+Finance atau Treasury mengunggah file transfer ke kanal Bank Mandiri, menjalankan proses otorisasi dan pembayaran, kemudian mencatat referensi pembayaran atau hasil transfer pada Payroll Workbench untuk keperluan rekonsiliasi.
+Manual / Interface
+HG.PAY.11
+Posting jurnal payroll
+Finance / Accounting
+Finance atau Accounting menghasilkan dan memeriksa jurnal payroll berdasarkan mapping Salary Component, akun buku besar, financial dimension, serta company. Jurnal yang telah sesuai diposting ke General Ledger dan nomor voucher dicatat sebagai referensi pada Payroll Period.
+Customization
+HG.PAY.12
+Tutup periode payroll
+Payroll Officer
+Payroll Officer menutup Payroll Period setelah pembayaran dan posting jurnal selesai dicatat. Penutupan mengunci periode, menyimpan laporan rekonsiliasi dan audit trail, serta mencegah transaksi baru dimasukkan tanpa proses reopen yang berwenang.
+Customization
+
+
+Appendix
+

@@ -1,0 +1,170 @@
+{
+  "input": "E:\\Panda\\MITO\\.tmp_blueprint\\reference.docx",
+  "fonts_by_char_count": {
+    "Calibri": 23745
+  },
+  "direct_run_formatting_runs": 1477,
+  "direct_paragraph_formatting_paragraphs": 1451,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 2,
+      "text": "Odoo 16",
+      "style": "Normal"
+    },
+    {
+      "para_index": 4,
+      "text": "System Blueprint",
+      "style": "Normal"
+    },
+    {
+      "para_index": 13,
+      "text": "PT. Forecastle Indonesia",
+      "style": "Normal"
+    },
+    {
+      "para_index": 24,
+      "text": "PT. Sinergi Karya Solusindo",
+      "style": "Normal"
+    },
+    {
+      "para_index": 28,
+      "text": "Document History",
+      "style": "Normal"
+    },
+    {
+      "para_index": 31,
+      "text": "Document Distribution",
+      "style": "Normal"
+    },
+    {
+      "para_index": 35,
+      "text": "PT. Sinergi Karya Solusindo",
+      "style": "Normal"
+    },
+    {
+      "para_index": 36,
+      "text": "PT. Forecastle Indonesia",
+      "style": "Normal"
+    },
+    {
+      "para_index": 266,
+      "text": "Detail of Statement of Fact",
+      "style": "Normal"
+    },
+    {
+      "para_index": 466,
+      "text": "Version",
+      "style": "Normal"
+    },
+    {
+      "para_index": 467,
+      "text": "Date",
+      "style": "Normal"
+    },
+    {
+      "para_index": 468,
+      "text": "Author",
+      "style": "Normal"
+    },
+    {
+      "para_index": 469,
+      "text": "Description",
+      "style": "Normal"
+    },
+    {
+      "para_index": 495,
+      "text": "# of Copy",
+      "style": "Normal"
+    },
+    {
+      "para_index": 496,
+      "text": "Description",
+      "style": "Normal"
+    },
+    {
+      "para_index": 501,
+      "text": "Name",
+      "style": "Normal"
+    },
+    {
+      "para_index": 502,
+      "text": "Project Role",
+      "style": "Normal"
+    },
+    {
+      "para_index": 503,
+      "text": "Date",
+      "style": "Normal"
+    },
+    {
+      "para_index": 504,
+      "text": "Signed",
+      "style": "Normal"
+    },
+    {
+      "para_index": 525,
+      "text": "Name",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "",
+        "style": "List Paragraph"
+      },
+      {
+        "para_index": 2,
+        "text": "Odoo 16",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "text": "System Blueprint",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "text": "",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 2,
+        "run_text": "Odoo 1",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": "6",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "run_text": "System Blueprint",
+        "style": "Normal"
+      },
+      {
+        "para_index": 10,
+        "run_text": "Disi",
+        "style": "Normal"
+      },
+      {
+        "para_index": 10,
+        "run_text": "apkan untuk:",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

@@ -1,0 +1,49 @@
+WEEKLY SUMMARY
+Periode: 24 Juli 2026
+
+1. POS Integration – Inbound
+   - TI yang tidak ditemukan masih tetap terbentuk.
+   - Tindak lanjut: Melakukan pengecekan kondisi dan proses pembentukan TI pada server staging.
+
+2. POS Integration – Inbound (Concurrent Update & Scheduled Date)
+   - Ditemukan error "could not serialize access due to concurrent update" ketika sistem memperbarui picking yang sudah berstatus Done.
+   - Ditemukan error perubahan Scheduled Date pada transfer yang sudah berstatus Done atau Cancelled.
+   - Status: Sudah tercatat pada issue list nomor 74 dan 75.
+
+3. Inventory – Delivery (Duplicate Sequence)
+   - Transaksi BBN4/RT/OUT/26/05/00006 mengalami duplicate sequence saat diduplikasi secara manual.
+   - Indikasi penyebab: Terjadi concurrent update ketika beberapa proses transfer berjalan secara bersamaan, termasuk proses selain inbound.
+
+4. Inventory – Delivery (Shipping Cost)
+   - Carrier, city, dan weight sudah diisi pada Additional Info DO, tetapi Shipping Cost masih bernilai 0 saat dokumen disimpan.
+   - Saat ini Shipping Cost baru muncul setelah DO divalidasi dan user menjalankan recompute shipping price.
+   - Tindak lanjut: Memperbaiki proses compute agar Shipping Cost langsung dihitung berdasarkan master data shipping ketika data carrier, city, dan weight diisi, bukan menggunakan nilai default 0.
+
+5. Inventory – Delivery (Status GR dari POS)
+   - Transaksi BBD4/RT/IN/26/04/00006 yang masuk melalui POS seharusnya langsung berstatus Done, tetapi masih berstatus Ready.
+   - Workaround: User melakukan validasi GR secara manual sesuai quantity.
+
+6. Inventory – Location (Transit Location)
+   - Dibutuhkan lokasi transit untuk menampung reservasi perpindahan barang.
+   - Tindak lanjut: Membuat lokasi transit antara GUD1 dan PRD1.
+
+7. Inventory – Delivery (Scheduled Date Inbound POS)
+   - Scheduled Date transaksi inbound POS BBJ6/RT/OUT/26/06/00004 menggunakan Created Date, padahal seharusnya menggunakan Posted Date.
+   - Tindak lanjut:
+     a. Memastikan tanggal pada file inbound sudah benar.
+     b. Menyesuaikan mapping Scheduled Date pada XML sesuai tanggal yang disepakati.
+
+8. MRP – Purchase Request
+   - Site YAAP tidak memiliki jadwal pada hari Selasa, tetapi Purchase Request tetap terbentuk.
+   - Tindak lanjut: Memperbaiki fungsi generate Purchase Request pada proses MRP agar mengikuti jadwal site.
+
+9. Delivery – Scrap
+   - User membutuhkan fitur validasi beberapa transaksi scrap sekaligus.
+   - Tindak lanjut: Menambahkan tombol bulk validate untuk record Scrap yang dipilih.
+
+RINGKASAN PRIORITAS
+1. Perbaikan concurrency pada proses picking/transfer dan pencegahan duplicate sequence.
+2. Perbaikan status serta tanggal transaksi inbound dari POS.
+3. Otomatisasi perhitungan Shipping Cost sebelum validasi DO.
+4. Fixing generate Purchase Request berdasarkan jadwal site.
+5. Penambahan transit location dan fitur bulk validation Scrap.

@@ -1,0 +1,16 @@
+{
+  "output": "E:\\Panda\\Hogy\\GPE_Requirements\\GPE_Requirement_Document_HRIS_People_Payroll_v0.1.docx",
+  "bytes": 57874,
+  "requirement_definitions": 47,
+  "functional_requirements": 43,
+  "nfr": 4,
+  "open_decisions": 16,
+  "integration_points": 7,
+  "reports": 8,
+  "uat_scenarios": 14,
+  "tables": 5,
+  "headings": 101,
+  "words_approx": 6703,
+  "structural_checks": "PASS",
+  "visual_qa": "PENDING renderer availability"
+}

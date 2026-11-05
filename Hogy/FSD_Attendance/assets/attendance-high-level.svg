@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="1000" viewBox="0 0 1250 1000">
+<rect width="1250" height="1000" fill="white"/>
+<text x="625.0" y="40.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="600" fill="#24364b">High Level Attendance</text>
+<text x="625.0" y="78.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#24364b">D365FO  |  File TXT manual  |  Shift sebagai acuan</text>
+<rect x="470.0" y="112.5" width="580" height="85" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="760" y="139.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">IT / Attendance Operator</text>
+<text x="760" y="170.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Menyiapkan file TXT</text>
+<rect x="470.0" y="247.5" width="580" height="85" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="760" y="274.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">HR Admin upload</text>
+<text x="760" y="305.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Attendance Staging</text>
+<rect x="470.0" y="382.5" width="580" height="85" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="760" y="409.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">HR memilih record</text>
+<text x="760" y="440.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Klik Process</text>
+<rect x="470.0" y="517.5" width="580" height="85" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="760" y="544.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Pemetaan punch terhadap shift</text>
+<text x="760" y="575.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Pembentukan / pembaruan Attendance</text>
+<rect x="470.0" y="652.5" width="580" height="85" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="760" y="679.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">HR memeriksa dan mengoreksi</text>
+<text x="760" y="710.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Employee Attendance</text>
+<rect x="470.0" y="787.5" width="580" height="85" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="760" y="814.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Laporan dan Payroll</text>
+<text x="760" y="845.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Menggunakan nilai attendance tersimpan</text>
+<polyline points="760,198 760,247" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="760,247 755.2153791247765,237.09508187412055 764.7846208752235,237.09508187412055" fill="#64758a"/>
+<polyline points="760,333 760,382" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="760,382 755.2153791247765,372.0950818741206 764.7846208752235,372.0950818741206" fill="#64758a"/>
+<polyline points="760,468 760,517" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="760,517 755.2153791247765,507.0950818741206 764.7846208752235,507.0950818741206" fill="#64758a"/>
+<polyline points="760,603 760,652" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="760,652 755.2153791247765,642.0950818741205 764.7846208752235,642.0950818741205" fill="#64758a"/>
+<polyline points="760,738 760,787" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="760,787 755.2153791247765,777.0950818741205 764.7846208752235,777.0950818741205" fill="#64758a"/>
+<rect x="52.5" y="505.0" width="355" height="110" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="230" y="545.15" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Working Schedule</text>
+<text x="230" y="574.85" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Tanggal dan jam shift efektif</text>
+<polyline points="407,560 470,560" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="470,560 460.0950818741206,564.7846208752235 460.0950818741206,555.2153791247765" fill="#64758a"/>
+<text x="625" y="935.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Staging: raw punch dan Status per record. Attendance: In/Out, durasi Float dan koreksi HR.</text>
+</svg>

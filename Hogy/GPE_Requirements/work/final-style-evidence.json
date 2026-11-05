@@ -1,0 +1,168 @@
+{
+  "input": "E:\\Panda\\Hogy\\GPE_Requirements\\GPE_Requirement_Document_Format_Blueprint_HOGY_v0.1.docx",
+  "fonts_by_char_count": {},
+  "direct_run_formatting_runs": 502,
+  "direct_paragraph_formatting_paragraphs": 815,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 49,
+      "text": "Document History",
+      "style": "Normal"
+    },
+    {
+      "para_index": 52,
+      "text": "Document Distribution",
+      "style": "Normal"
+    },
+    {
+      "para_index": 55,
+      "text": "GPE",
+      "style": "Normal"
+    },
+    {
+      "para_index": 59,
+      "text": "Tim Implementasi - reviewer dikonfirmasi",
+      "style": "Normal"
+    },
+    {
+      "para_index": 140,
+      "text": "SEC-01 | Pembatasan payroll per site",
+      "style": "Normal"
+    },
+    {
+      "para_index": 144,
+      "text": "SEC-02 | Approval, alasan penolakan, dan jejak keputusan",
+      "style": "Normal"
+    },
+    {
+      "para_index": 150,
+      "text": "EMP-01 | Identitas dan histori karyawan",
+      "style": "Normal"
+    },
+    {
+      "para_index": 154,
+      "text": "REC-01 | Manpower planning",
+      "style": "Normal"
+    },
+    {
+      "para_index": 158,
+      "text": "REC-02 | Permintaan tenaga kerja",
+      "style": "Normal"
+    },
+    {
+      "para_index": 162,
+      "text": "REC-03 | Pipeline recruitment dan dokumen kandidat",
+      "style": "Normal"
+    },
+    {
+      "para_index": 166,
+      "text": "REC-04 | Onboarding, kontrak, dan notifikasi",
+      "style": "Normal"
+    },
+    {
+      "para_index": 172,
+      "text": "ATT-01 | Penerimaan dan verifikasi attendance",
+      "style": "Normal"
+    },
+    {
+      "para_index": 176,
+      "text": "ATT-02 | Roster, shift, dan kalender hari libur",
+      "style": "Normal"
+    },
+    {
+      "para_index": 180,
+      "text": "ATT-03 | SPL dan kondisi kerja khusus",
+      "style": "Normal"
+    },
+    {
+      "para_index": 186,
+      "text": "LEV-01 | Annual leave dan saldo",
+      "style": "Normal"
+    },
+    {
+      "para_index": 190,
+      "text": "LEV-02 | Pengajuan dan bukti cuti",
+      "style": "Normal"
+    },
+    {
+      "para_index": 194,
+      "text": "LEV-03 | Perubahan cuti roster",
+      "style": "Normal"
+    },
+    {
+      "para_index": 200,
+      "text": "PAY-01 | Struktur gaji per site dan employee",
+      "style": "Normal"
+    },
+    {
+      "para_index": 204,
+      "text": "PAY-02 | Input insentif dan komponen variabel",
+      "style": "Normal"
+    },
+    {
+      "para_index": 208,
+      "text": "PAY-03 | Prorata dan penyesuaian payroll",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 4,
+        "text": "",
+        "style": "Normal"
+      },
+      {
+        "para_index": 5,
+        "text": "",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 49,
+        "run_text": "Document History",
+        "style": "Normal"
+      },
+      {
+        "para_index": 52,
+        "run_text": "Document Distribution",
+        "style": "Normal"
+      },
+      {
+        "para_index": 55,
+        "run_text": "GPE",
+        "style": "Normal"
+      },
+      {
+        "para_index": 59,
+        "run_text": "Tim Implementasi - reviewer dikonfirmasi",
+        "style": "Normal"
+      },
+      {
+        "para_index": 140,
+        "run_text": "SEC-01 | Pembatasan payroll per site",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}

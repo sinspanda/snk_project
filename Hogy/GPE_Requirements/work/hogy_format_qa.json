@@ -1,0 +1,37 @@
+{
+  "output": "E:\\Panda\\Hogy\\GPE_Requirements\\GPE_Requirement_Document_Format_Blueprint_HOGY_v0.1.docx",
+  "bytes": 98991,
+  "functional_requirements": 43,
+  "nfr": 4,
+  "open_decisions": 16,
+  "uat": 14,
+  "integration_points": 7,
+  "reports": 8,
+  "activity_matrices": 11,
+  "sections": 2,
+  "preserve_only_parts_unchanged": true,
+  "changed_parts": [
+    "[Content_Types].xml",
+    "word/document.xml",
+    "word/_rels/document.xml.rels",
+    "word/header2.xml",
+    "word/footer3.xml",
+    "word/_rels/header2.xml.rels",
+    "word/settings.xml",
+    "docProps/core.xml",
+    "docProps/app.xml"
+  ],
+  "removed_from_output_only": [
+    "word/embeddings/oleObject1.bin",
+    "word/embeddings/oleObject2.bin",
+    "word/media/image1.png",
+    "word/media/image2.jpeg",
+    "word/media/image3.emf",
+    "word/media/image4.emf",
+    "word/media/image5.png"
+  ],
+  "source_unchanged": true,
+  "toc_links": 48,
+  "visual_qa": "NOT COMPLETED - soffice unavailable",
+  "field_refresh": "updateFields=true; live TOC with current no-page-number cache; Word refresh required for layout-dependent fields"
+}

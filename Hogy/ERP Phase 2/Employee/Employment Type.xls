@@ -1,0 +1,663 @@
+
+
+
+    <label class="control-label col-lg-12" style="text-align:center;">Employment Type</label>
+    <table style="width:100%;border-collapse:collapse">
+        <thead style="text-align:center">
+            <tr role="row" class="">
+                <th style="width:180px;border:1px solid #000;">Employment Type Code</th>
+                <th style="width:250px;border:1px solid #000;">Employment Type Name</th>
+                <th style="width:97px;border:1px solid #000;">Status</th>
+                <th style="width:136px;border:1px solid #000;">Remarks</th>
+            </tr>
+        </thead>
+        <tbody>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                PERMANENT
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Permanent
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT1A
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 1 - 1 Thn
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT2A
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 2 - 1 Thn
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT3A
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 3 - 1 Thn
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT4A
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 4 - 1 Thn
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT5A
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 5 - 1 Thn
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT1B
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 1 Staff
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT2B
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 2 Staff
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT1C
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 1 - 6 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT2C
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 2 - 6 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT3C
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 3 - 6 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT4C
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 4 - 6 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT5C
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 5 - 6 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT6C
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 6 - 6 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT7C
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 7 - 6 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT8C
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 8 - 6 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT9C
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 9 - 6 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT10C
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 10 - 6 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACTR
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract Rehire
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                EXPATRIATES
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Expatriate Advisor
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                EXPATRIATE
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Expatriate
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                MAGANG
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Magang
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                ADVISOR
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract Advisor
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT1D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 1 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT2D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 2 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT3D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 3 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT4D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 4 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT5D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 5 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT6D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 6 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT7D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 7 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT8D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 8 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT9D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 9 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT10D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 10 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT11D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 11 - 3 bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT12D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 12 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT13D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 13 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT14D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 14 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT15D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 15 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT16D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 16 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT17D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 17 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT18D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 18 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT19D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 19 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+                        <tr role="row">
+                            <td style="border:1px solid #000;">
+                                CONTRACT20D
+                            </td>
+                            <td style="border:1px solid #000;">
+                                Contract 20 - 3 Bln
+                            </td>
+                            <td style="border:1px solid #000;">
+                               Active
+                                
+                            </td>
+                            <td style="border:1px solid #000;">
+                                
+                            </td>
+                        </tr>
+
+        </tbody>
+
+    </table>

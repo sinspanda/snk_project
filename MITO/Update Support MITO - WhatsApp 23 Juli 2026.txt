@@ -1,0 +1,56 @@
+*UPDATE SUPPORT MITO*
+_Per 23 Juli 2026_
+
+✅ *CLOSED / DONE*
+
+*1. Font DO*
+Sudah selesai.
+PIC: Oli
+
+*2. Loading Lambat & Memory Error pada Quotation*
+Sudah diperbaiki dan telah naik ke production.
+PIC: Fira & Oli
+
+*3. Nomor AP Form pada Financial Invoice Report*
+Sudah naik ke production.
+PIC: Fira
+
+━━━━━━━━━━━━━━━━━━
+
+📝 *TO DO / FOLLOW-UP*
+
+*1. Unrealized Gain/Loss*
+Sudah naik ke production, pending konfirmasi PIC.
+Follow-up: Fira
+Support: Angga
+
+*2. Reward, Free Product & AP Form Lintas OU*
+Sudah naik ke production, pending pengecekan user ke Bu Meli.
+Follow-up: Fira
+
+*3. Stock Minus*
+• Testing adjustment, SVL, dan INVAL: Oli & Krisna
+• Konfirmasi COA adjustment: Fira
+
+*4. IMEI Duplikat*
+Jumlah issue sudah minim. Dilanjutkan monitoring dan penanganan secara case-by-case.
+Follow-up: Oli
+
+*5. Advance Budget*
+Update development sudah selesai, pending pengecekan skema.
+Follow-up: Fira
+
+*6. Budget Project/Jobsheet*
+Budget Jobsheet sudah tersedia di development. Pending pengecekan skema Budget Project.
+Follow-up: Fira
+Support: Angga
+
+*7. COA Barang Dalam Transit*
+Koreksi PO SKD periode Maret–Juli sudah selesai. Pending data GRV dan perbandingan dengan Bill.
+Follow-up data & comparison: Oli
+Support analysis: Krisna, Angga & Oli
+
+*8. COA Ayat Silang Pembelian*
+Pending data GRV dari Mbak Gita.
+Follow-up: Fira
+Support analysis: Krisna, Angga & Oli

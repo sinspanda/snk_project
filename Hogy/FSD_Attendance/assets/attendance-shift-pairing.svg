@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1250" height="1190" viewBox="0 0 1250 1190">
+<rect width="1250" height="1190" fill="white"/>
+<text x="625.0" y="40.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="600" fill="#24364b">Pemetaan Punch Berdasarkan Shift</text>
+<text x="625.0" y="78.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#24364b">Timestamp TXT + working schedule efektif menentukan tanggal kerja dan arah punch</text>
+<rect x="495.0" y="122.5" width="610" height="85" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="800" y="149.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Baca employee dan timestamp punch</text>
+<text x="800" y="180.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Cari shift termasuk hari sebelumnya</text>
+<polygon points="800,262.5 970.0,330 800,397.5 630.0,330" fill="#fff5d9" stroke="#24364b" stroke-width="2"/>
+<text x="800" y="314.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">Satu shift</text>
+<text x="800" y="345.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">cocok?</text>
+<polyline points="800,208 800,262" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="800,262 795.2153791247765,252.09508187412055 804.7846208752235,252.09508187412055" fill="#64758a"/>
+<rect x="40.0" y="280.0" width="370" height="100" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="225" y="315.825" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Failed</text>
+<text x="225" y="344.175" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Shift tidak ada / ambigu</text>
+<polyline points="630,330 410,330" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="410,330 419.9049181258794,325.21537912477646 419.9049181258794,334.78462087522354" fill="#64758a"/>
+<text x="515" y="300.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Tidak</text>
+<rect x="495.0" y="450.0" width="610" height="90" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="800" y="479.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Tanggal kerja = tanggal mulai shift</text>
+<text x="800" y="510.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="400" fill="#24364b">Kelompokkan ke rentang In / Out</text>
+<polyline points="800,398 800,450" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="800,450 795.2153791247765,440.0950818741206 804.7846208752235,440.0950818741206" fill="#64758a"/>
+<text x="840" y="424.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Ya</text>
+<polygon points="800,597.5 970.0,665 800,732.5 630.0,665" fill="#fff5d9" stroke="#24364b" stroke-width="2"/>
+<text x="800" y="649.475" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">Peran punch</text>
+<text x="800" y="680.525" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">dapat ditentukan?</text>
+<polyline points="800,540 800,597" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="800,597 795.2153791247765,587.0950818741205 804.7846208752235,587.0950818741205" fill="#64758a"/>
+<rect x="40.0" y="615.0" width="370" height="100" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="225" y="650.825" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Failed</text>
+<text x="225" y="679.175" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Punch ambigu</text>
+<polyline points="630,665 410,665" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="410,665 419.9049181258794,660.2153791247765 419.9049181258794,669.7846208752235" fill="#64758a"/>
+<text x="515" y="634.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Tidak</text>
+<rect x="495.0" y="800.0" width="610" height="110" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="800" y="825.3" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Bentuk / perbarui Attendance shift terkait</text>
+<text x="800" y="855.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Out berikutnya melengkapi record existing</text>
+<text x="800" y="884.7" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Koreksi HR tidak ditimpa otomatis</text>
+<polyline points="800,733 800,800" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="800,800 795.2153791247765,790.0950818741205 804.7846208752235,790.0950818741205" fill="#64758a"/>
+<text x="840" y="767.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="600" fill="#24364b">Ya</text>
+<rect x="495.0" y="995.0" width="610" height="90" fill="#eaf2fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="800" y="1025.15" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Hitung durasi Float dan late / early leave</text>
+<text x="800" y="1054.85" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Out kosong: durasi 0.0, Missing Out aktif</text>
+<polyline points="800,910 800,995" fill="none" stroke="#64758a" stroke-width="3"/>
+<polygon points="800,995 795.2153791247765,985.0950818741205 804.7846208752235,985.0950818741205" fill="#64758a"/>
+<text x="625" y="1140.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Rentang In/Out, banyak punch, dan konflik shift perlu aturan final sebelum development.</text>
+</svg>

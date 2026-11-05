@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1000"><rect width="1500" height="1000" fill="white"/>
+<rect x="0.0" y="0.0" width="1500" height="70" fill="#002050" stroke="#b7c6d6" stroke-width="2"/>
+<text x="35" y="35.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="24" font-weight="600" fill="#ffffff">Dynamics 365  |  Finance and Operations</text>
+<text x="1440" y="35.0" dominant-baseline="middle" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#ffffff">HOGY  ·  HR Admin</text>
+<text x="40" y="112.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="34" font-weight="400" fill="#24364b">Attendance Staging</text>
+<text x="1440" y="112.0" dominant-baseline="middle" text-anchor="end" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">Konsep · Data ilustrasi</text>
+<rect x="40.0" y="157.0" width="166" height="46" fill="#f6f7f9" stroke="#b7c6d6" stroke-width="2"/>
+<text x="123.0" y="180.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#24364b">Upload File</text>
+<rect x="220.0" y="157.0" width="118" height="46" fill="#f6f7f9" stroke="#b7c6d6" stroke-width="2"/>
+<text x="279.0" y="180.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#24364b">Process</text>
+<rect x="352.0" y="157.0" width="94" height="46" fill="#f6f7f9" stroke="#b7c6d6" stroke-width="2"/>
+<text x="399.0" y="180.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#24364b">Retry</text>
+<rect x="460.0" y="157.0" width="166" height="46" fill="#f6f7f9" stroke="#b7c6d6" stroke-width="2"/>
+<text x="543.0" y="180.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#24364b">View Errors</text>
+<rect x="640.0" y="157.0" width="214" height="46" fill="#f6f7f9" stroke="#b7c6d6" stroke-width="2"/>
+<text x="747.0" y="180.0" dominant-baseline="middle" text-anchor="middle" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#24364b">Open Attendance</text>
+<text x="40" y="255.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="21" font-weight="400" fill="#24364b">Legal Entity  [ HOGY ]     Punch Date  [ From ... To ... ]     Status  [ All ]</text>
+<rect x="40.0" y="295.0" width="1420" height="46" fill="#f0f3f6" stroke="#b7c6d6" stroke-width="2"/>
+<text x="52" y="318.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" fill="#24364b">Select</text>
+<text x="142" y="318.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" fill="#24364b">Source NPK</text>
+<text x="302" y="318.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" fill="#24364b">Punch Timestamp</text>
+<text x="582" y="318.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" fill="#24364b">Employee</text>
+<text x="822" y="318.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" fill="#24364b">Status</text>
+<text x="982" y="318.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="600" fill="#24364b">Error</text>
+<rect x="40.0" y="341.0" width="1420" height="62" fill="#edf4fb" stroke="#b7c6d6" stroke-width="2"/>
+<text x="52" y="372.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">[x]</text>
+<text x="142" y="372.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">001198</text>
+<text x="302" y="372.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">07/10/2026 22:58</text>
+<text x="582" y="372.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">Ari Saputra</text>
+<text x="822" y="372.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">Processed</text>
+<text x="982" y="372.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">—</text>
+<rect x="40.0" y="403.0" width="1420" height="62" fill="#ffffff" stroke="#b7c6d6" stroke-width="2"/>
+<text x="52" y="434.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">[x]</text>
+<text x="142" y="434.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">999999</text>
+<text x="302" y="434.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">08/10/2026 07:00</text>
+<text x="582" y="434.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">—</text>
+<text x="822" y="434.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">Failed</text>
+<text x="982" y="434.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">Employee tidak ditemukan</text>
+<rect x="40.0" y="465.0" width="1420" height="62" fill="#ffffff" stroke="#b7c6d6" stroke-width="2"/>
+<text x="52" y="496.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b"></text>
+<text x="142" y="496.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">001198</text>
+<text x="302" y="496.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">08/10/2026 07:01</text>
+<text x="582" y="496.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">Ari Saputra</text>
+<text x="822" y="496.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">Pending</text>
+<text x="982" y="496.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="19" font-weight="400" fill="#24364b">—</text>
+<text x="40" y="585.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">▼  Selected Record</text>
+<text x="40" y="645.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" fill="#24364b">Legal Entity</text>
+<text x="40" y="679.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">HOGY</text>
+<text x="530" y="645.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" fill="#24364b">Source NPK</text>
+<text x="530" y="679.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">001198</text>
+<text x="1000" y="645.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" fill="#24364b">Status</text>
+<text x="1000" y="679.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Processed</text>
+<text x="40" y="740.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" fill="#24364b">Punch Timestamp</text>
+<text x="40" y="774.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">07/10/2026 22:58</text>
+<text x="530" y="740.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" fill="#24364b">Resolved Employee</text>
+<text x="530" y="774.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">Ari Saputra</text>
+<text x="1000" y="740.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="400" fill="#24364b">Error Message</text>
+<text x="1000" y="774.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="400" fill="#24364b">—</text>
+<text x="40" y="855.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="23" font-weight="600" fill="#24364b">+  Source Data</text>
+<text x="40" y="940.0" dominant-baseline="middle" text-anchor="start" font-family="Segoe UI,Arial,sans-serif" font-size="20" font-weight="400" fill="#24364b">Satu Status per record. Tidak ada BatchId, RowNumber, atau tombol Validate.</text>
+</svg>
