@@ -4,7 +4,7 @@ Target: Odoo 18 Enterprise, Inventory · CR v0.1 · Commercial effort: 2 mandays
 
 Build an Inventory feature that records a grade change request, lets an Inventory Approver validate it, and applies the new grade to the selected product masters on its Effective Date. One request has one date, one new grade, one mode, and one or more product lines.
 
-- [Change Request Pengajuan Perubahan Grade](https://chatgpt.com/library?file_id=libfile_32d809b75e0c81918e494fc966cbea76&account_id=personal)
+- [Change Request Pengajuan Perubahan Grade](https://github.com/sinspanda/snk_project/blob/main/MESA/Pengajuan%20Perubahan%20Grade/Pengajuan%20Perubahan%20Grade.png)
 
 The workflow, screen behavior, and roadmap are specified in this file. No image attachment is required to implement the feature.
 
